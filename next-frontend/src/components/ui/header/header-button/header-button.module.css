@@ -1,0 +1,20 @@
+.button {
+    font-size: calc(16rem / 16);
+    font-weight: 500;
+    text-transform: capitalize;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(var(--purple-primary-rgb), 0);
+    text-underline-offset: calc(6rem / 16);
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration-color 0.1s ease-in-out;
+}
+
+.button:hover {
+    text-decoration-color: rgba(var(--purple-primary-rgb), 1);
+}
+
+.button.selected {
+    color: var(--purple-primary);
+}
