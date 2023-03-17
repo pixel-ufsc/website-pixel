@@ -1,7 +1,13 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/src/components/*": ["./src/*"]
+    "compilerOptions": {
+        "paths": {
+            "@components/*": ["./src/components/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@contexts/*": ["./src/contexts/*"],
+            "@models/*": ["./src/models/*"],
+            "@lib/*": ["./src/lib/*"]
+        }
     }
-  }
 }
+
