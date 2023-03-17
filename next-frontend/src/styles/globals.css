@@ -35,6 +35,10 @@ ul {
     padding: 0;
     margin: 0;
 }
+button {
+    all: unset;
+    cursor: pointer;
+}
 
 ::-moz-selection {
     background: #d3ebfc;
