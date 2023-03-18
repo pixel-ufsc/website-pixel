@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
+        "jsx": "react",
         "paths": {
             "@components/*": ["./src/components/*"],
             "@pages/*": ["./src/pages/*"],
             "@styles/*": ["./src/styles/*"],
             "@contexts/*": ["./src/contexts/*"],
             "@models/*": ["./src/models/*"],
-            "@lib/*": ["./src/lib/*"]
+            "@lib/*": ["./src/lib/*"],
+            "@public/*": ["./public/*"]
         }
     }
 }
