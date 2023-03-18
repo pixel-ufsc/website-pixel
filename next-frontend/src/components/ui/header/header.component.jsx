@@ -35,7 +35,6 @@ function Navigation({ mobile }) {
 
 export default function Header() {
     const [isMenuOpen, setMenuIsOpen] = useState(false);
-    // TODO - Adicionar highlight para o path acessado no momento
 
     return (
         <>
