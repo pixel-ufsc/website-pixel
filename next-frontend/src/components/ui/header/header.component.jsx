@@ -1,5 +1,6 @@
 import styles from './header.module.css';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 // Assets
 import PixelLogoHorizontal from '@public/svgs/pixel/pixel-logo-horizontal';
@@ -8,13 +9,26 @@ import { Squash } from './hamburguer-icon/squash-hamburger.component';
 import HeaderButton from './header-button/header-button.component';
 
 function Navigation({ mobile }) {
+    const router = useRouter();
+    const pathsArray = router.pathname.split('/').splice(1);
+
     return (
         <nav className={mobile ? styles.vertical_nav : styles.horizontal_nav}>
-            <HeaderButton href="/">Home</HeaderButton>
-            <HeaderButton href="/servicos">Serviços</HeaderButton>
-            <HeaderButton href="/sobre">Sobre Nós</HeaderButton>
-            <HeaderButton href="/portfolio">Portfólio</HeaderButton>
-            <HeaderButton href="/contato">Contato</HeaderButton>
+            <HeaderButton href="/" selected={pathsArray[0] === ''}>
+                Home
+            </HeaderButton>
+            <HeaderButton href="/servicos" selected={pathsArray[0] === 'servicos'}>
+                Serviços
+            </HeaderButton>
+            <HeaderButton href="/sobre" selected={pathsArray[0] === 'sobre'}>
+                Sobre
+            </HeaderButton>
+            <HeaderButton href="/portfolio" selected={pathsArray[0] === 'portfolio'}>
+                Portfólio
+            </HeaderButton>
+            <HeaderButton href="/contato" selected={pathsArray[0] === 'contato'}>
+                Contato
+            </HeaderButton>
         </nav>
     );
 }
