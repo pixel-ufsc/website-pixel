@@ -6,7 +6,6 @@ export default function Home() {
     return (
         <PageContainer>
             <h1>Home</h1>
-            <Card imageSrc='/talis.jpg' name='Tális Breda' role="Desenvolvedor"/>
         </PageContainer>
     );
 }
