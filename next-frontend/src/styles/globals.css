@@ -2,18 +2,20 @@
     /* HEX Colors */
     --color-purple: #82337e;
     --color-pink: #f3daf1;
+    --color-blue: #023047;
+    --color-white: #fff;
     /* --e-global-color-secondary: #54595f;
     --e-global-color-text: #7a7a7a;
     --e-global-color-accent: #61ce70;
     --e-global-color-2644648: #4054b2;
     --e-global-color-3f8b8c84: #23a455;
-    --e-global-color-2573139f: #000;
-    --e-global-color-30566fa4: #fff;
-    --e-global-color-73bc07f: #023047; */
+    --e-global-color-2573139f: #000; */
 
     /* RGB Color */
     --color-purple-rgb: 130, 51, 126;
     --color-pink-rgb: 243, 218, 241;
+    --color-blue-rgb: rgb(2, 48, 71);
+    --color-white-rgb: rgb(255, 255, 255);
 }
 
 * {
@@ -43,7 +45,7 @@ button {
 }
 
 h4 {
-    font-family: "Raleway",arial,sans-serif;
+    font-family: 'Raleway', arial, sans-serif;
     font-size: 1.375em;
     line-height: 1.15;
     color: #023047;
@@ -64,4 +66,3 @@ h5 {
 ::selection {
     background: rgba(var(--color-pink-rgb), 0.5);
 }
-
