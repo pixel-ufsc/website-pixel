@@ -20,16 +20,27 @@
     color: var(--color-white);
 }
 
-.logo_container {
+.icons_container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .icon_wrapper {
-    width: 19px;
-    height: 27px;
+    width: 17px;
+    height: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .email_text {
+        display: none;
+    }
+
+    .content_wrapper {
+        justify-content: flex-end;
+    }
 }
