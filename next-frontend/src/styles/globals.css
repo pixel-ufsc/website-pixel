@@ -4,6 +4,7 @@
     --color-pink: #f3daf1;
     --color-blue: #023047;
     --color-white: #fff;
+    --color-whatsapp: #25d366;
     /* --e-global-color-secondary: #54595f;
     --e-global-color-text: #7a7a7a;
     --e-global-color-accent: #61ce70;
@@ -16,6 +17,7 @@
     --color-pink-rgb: 243, 218, 241;
     --color-blue-rgb: rgb(2, 48, 71);
     --color-white-rgb: rgb(255, 255, 255);
+    --color-whatsapp-rgb: rgb(37, 211, 102);
 }
 
 * {

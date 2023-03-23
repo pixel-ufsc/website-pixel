@@ -1,0 +1,34 @@
+.button {
+    position: fixed;
+    bottom: -100px;
+    right: -100px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(60rem / 16);
+    height: calc(60rem / 16);
+    border-radius: 50%;
+
+    background-color: var(--color-whatsapp);
+    box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, 0.24);
+
+    cursor: pointer;
+    transition: background-color 1.4s linear, right 1s linear, bottom 1s linear;
+}
+
+.button_on_screen {
+    right: calc(30rem / 16);
+    bottom: calc(26rem / 16);
+}
+
+.button:hover {
+    background-color: #128c7e;
+}
+
+.icon {
+    width: calc(37rem / 16);
+    shape-rendering: geometricPrecision;
+}
