@@ -16,7 +16,7 @@
     box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, 0.24);
 
     cursor: pointer;
-    transition: background-color 1.4s linear, right 1s linear, bottom 1s linear;
+    transition: background-color 1s ease-in-out, bottom 3s cubic-bezier(0.14, 0.57, 0.01, 1);
 }
 
 .button_on_screen {
