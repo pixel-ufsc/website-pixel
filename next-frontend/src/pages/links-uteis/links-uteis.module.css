@@ -1,8 +1,9 @@
 .background {
     background: rgb(142, 68, 173);
     background: linear-gradient(161deg, rgba(142, 68, 173, 1) 43%, rgba(26, 185, 229, 1) 97%);
-    height: 100vh;
-    width: 100vw;
+    /* always cover entire screen with scroll option*/
+    min-height: 100vh;
+    width: 100%;
 }
 .container {
     display: flex;
@@ -10,6 +11,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 6rem;
+    padding-bottom: 6rem;
     gap: 3rem;
 }
 .container_buttons {

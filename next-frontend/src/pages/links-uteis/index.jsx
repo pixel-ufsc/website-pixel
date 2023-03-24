@@ -5,25 +5,50 @@ import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-butt
 import LinksHeader from '@components/ui/header/links-header/links-header.component';
 import LinkButton from '@components/ui/buttons/link-button/link-button.component';
 
-export default function LinksUteis() {
+export default function LinksUteis({ links }) {
     return (
         <div className={styles.background}>
             <PageContainer>
                 <div className={styles.container}>
                     <LinksHeader />
                     <div className={styles.container_buttons}>
-                        <LinkButton texto="Nosso Site" link="/" />
-                        <LinkButton texto="LinkedIn" link="https://www.linkedin.com/company/ejpixel" />
-                        <LinkButton texto="Facebook" link="https://www.fb.com/ejpixel" />
-                        <LinkButton
-                            texto="E-book Gestão do conhecimento"
-                            link="https://drive.google.com/file/d/1dLGZcmuvDa9tutWsMEfMLOGMvdeUZjlI/view"
-                        />
+                        {Object.keys(links).map((key) => (
+                            <LinkButton key={key} link={links[key].link} texto={links[key].texto} />
+                        ))}
                     </div>
                 </div>
             </PageContainer>
             <WhatsappButton />
         </div>
     );
+}
+
+// get static props
+export async function getStaticProps() {
+    // temporario
+    const links = {
+        0: {
+            link: '/',
+            texto: 'Nosso Site',
+        },
+        1: {
+            link: 'https://www.linkedin.com/company/ejpixel',
+            texto: 'LinkedIn',
+        },
+        2: {
+            link: 'https://www.fb.com/ejpixel',
+            texto: 'Facebook',
+        },
+        3: {
+            link: 'https://drive.google.com/file/d/1dLGZcmuvDa9tutWsMEfMLOGMvdeUZjlI/view',
+            texto: 'E-book Gestão do conhecimento',
+        },
+    };
+
+    return {
+        props: {
+            links,
+        },
+    };
 }
 
