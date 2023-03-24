@@ -11,23 +11,15 @@ export default function LinksUteis() {
             <PageContainer>
                 <div className={styles.container}>
                     <LinksHeader />
-                    <ul className={styles.container_buttons}>
-                        <il>
-                            <LinkButton texto="Nosso Site" link="/" />
-                        </il>
-                        <il>
-                            <LinkButton texto="LinkedIn" link="https://www.linkedin.com/company/ejpixel" />
-                        </il>
-                        <il>
-                            <LinkButton texto="Facebook" link="https://www.fb.com/ejpixel" />
-                        </il>
-                        <il>
-                            <LinkButton
-                                texto="E-book Gestão do conhecimento"
-                                link="https://drive.google.com/file/d/1dLGZcmuvDa9tutWsMEfMLOGMvdeUZjlI/view"
-                            />
-                        </il>
-                    </ul>
+                    <div className={styles.container_buttons}>
+                        <LinkButton texto="Nosso Site" link="/" />
+                        <LinkButton texto="LinkedIn" link="https://www.linkedin.com/company/ejpixel" />
+                        <LinkButton texto="Facebook" link="https://www.fb.com/ejpixel" />
+                        <LinkButton
+                            texto="E-book Gestão do conhecimento"
+                            link="https://drive.google.com/file/d/1dLGZcmuvDa9tutWsMEfMLOGMvdeUZjlI/view"
+                        />
+                    </div>
                 </div>
             </PageContainer>
             <WhatsappButton />
