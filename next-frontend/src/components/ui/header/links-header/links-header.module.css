@@ -1,0 +1,11 @@
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: min(80vw, 25rem);
+    shape-rendering: geometricPrecision;
+}
+

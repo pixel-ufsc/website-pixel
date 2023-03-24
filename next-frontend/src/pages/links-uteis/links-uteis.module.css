@@ -1,0 +1,21 @@
+.background {
+    background: rgb(142, 68, 173);
+    background: linear-gradient(161deg, rgba(142, 68, 173, 1) 29%, rgba(26, 185, 229, 1) 97%);
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    gap: 2rem;
+}
+.container_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
