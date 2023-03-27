@@ -1,5 +1,8 @@
 import Head from 'next/head';
 
+// Assets
+import styles from './page-container.module.css';
+
 // Componente usado para envolver as páginas, evitando a repetição do código de Head das páginas e
 // garatindo um fallback padrão para o título e descrição das páginas.
 
@@ -18,7 +21,7 @@ export default function PageContainer({ title, description, children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>{children}</main>
+            <main className={styles.page_container}>{children}</main>
         </>
     );
 }
