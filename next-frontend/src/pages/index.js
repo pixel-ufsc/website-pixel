@@ -2,6 +2,7 @@
 import PageContainer from '@components/layout/page-container/page-container.component';
 import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
 import MemberCard from '@components/ui/card/member-card/member-card.component';
+import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
 export default function Home() {
     return (
@@ -14,6 +15,9 @@ export default function Home() {
                     role={'Diretor de Comercial'}
                 />
                 <MemberCard />
+                <div style={{ margin: '20px 0', marginLeft: '5px' }}>
+                    <HoverableButton />
+                </div>
             </PageContainer>
             <WhatsappButton />
         </>
