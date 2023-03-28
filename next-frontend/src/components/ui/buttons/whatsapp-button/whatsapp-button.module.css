@@ -1,7 +1,7 @@
 .button {
     position: fixed;
     bottom: -80px;
-    right: calc(26rem / 16);
+    right: calc(20rem / 16);
     z-index: 100;
 
     display: flex;
@@ -16,16 +16,17 @@
     box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, 0.24);
 
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
     animation: icon-pop 2s cubic-bezier(0.14, 0.57, 0.01, 1) forwards;
     animation-delay: 3s;
 }
 
 .button:hover {
-    background-color: #128c7e;
+    background-color: #6dc08c;
 }
 
 .icon {
-    width: calc(37rem / 16);
+    width: calc(36rem / 16);
     shape-rendering: geometricPrecision;
 }
 
@@ -37,6 +38,6 @@
     100% {
         opacity: 1;
         transform: scale(1);
-        bottom: calc(26rem / 16);
+        bottom: calc(20rem / 16);
     }
 }
