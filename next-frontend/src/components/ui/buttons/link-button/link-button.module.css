@@ -1,13 +1,13 @@
 .link_button {
+    min-width: 100%;
+    padding: 0.7rem;
     background: whitesmoke;
     border-radius: 0.9rem;
-    padding: 0.7rem;
-    min-width: 100%;
     text-align: center;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 .link_button:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 .link_button_text {
     font-family: 'KoHo';
@@ -18,4 +18,3 @@
     text-decoration: none;
     src: url(https://fonts.gstatic.com/s/koho/v16/K2FzfZ5fmddNNisssJ_DJaql.woff2) format('woff2');
 }
-

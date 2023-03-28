@@ -1,30 +1,33 @@
 .background {
     background: rgb(142, 68, 173);
     background: linear-gradient(161deg, rgba(142, 68, 173, 1) 43%, rgba(26, 185, 229, 1) 97%);
-    /* always cover entire screen with scroll option*/
+    /* Always covers entire screen with scroll option*/
     min-height: 100vh;
     width: 100%;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    gap: 3rem;
+
+    padding-top: calc(60px + 4vh);
+    padding-bottom: calc(60px + 4vh);
+    gap: calc(40px + 4vh);
 }
+
 .container_buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: calc(500px + 30vw);
     gap: 1rem;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 50rem) {
     .container_buttons {
-        width: 33%;
+        width: 90vw;
     }
 }
-

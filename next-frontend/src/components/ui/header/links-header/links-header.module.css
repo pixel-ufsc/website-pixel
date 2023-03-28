@@ -5,7 +5,12 @@
 }
 
 .logo {
-    width: min(80vw, 25rem);
+    width: 200px;
     shape-rendering: geometricPrecision;
 }
 
+@media screen and (max-width: 50rem) {
+    .logo {
+        width: 150px;
+    }
+}

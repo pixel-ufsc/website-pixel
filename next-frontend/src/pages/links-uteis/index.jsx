@@ -7,8 +7,8 @@ import LinkButton from '@components/ui/buttons/link-button/link-button.component
 
 export default function LinksUteis({ links }) {
     return (
-        <div className={styles.background}>
-            <PageContainer>
+        <PageContainer>
+            <div className={styles.background}>
                 <div className={styles.container}>
                     <LinksHeader />
                     <div className={styles.container_buttons}>
@@ -17,9 +17,9 @@ export default function LinksUteis({ links }) {
                         ))}
                     </div>
                 </div>
-            </PageContainer>
-            <WhatsappButton />
-        </div>
+                <WhatsappButton />
+            </div>
+        </PageContainer>
     );
 }
 
@@ -51,4 +51,3 @@ export async function getStaticProps() {
         },
     };
 }
-
