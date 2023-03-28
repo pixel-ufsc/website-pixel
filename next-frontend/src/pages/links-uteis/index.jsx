@@ -1,13 +1,12 @@
 import styles from './links-uteis.module.css';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
-import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
 import LinksHeader from '@components/ui/header/links-header/links-header.component';
 import LinkButton from '@components/ui/buttons/link-button/link-button.component';
 
 export default function LinksUteis({ links }) {
     return (
-        <PageContainer>
+        <PageContainer hasHeader={false} hasFooter={false}>
             <div className={styles.background}>
                 <div className={styles.container}>
                     <LinksHeader />
@@ -17,7 +16,6 @@ export default function LinksUteis({ links }) {
                         ))}
                     </div>
                 </div>
-                <WhatsappButton />
             </div>
         </PageContainer>
     );
@@ -25,7 +23,7 @@ export default function LinksUteis({ links }) {
 
 // get static props
 export async function getStaticProps() {
-    // temporario
+    // temporario - TODO
     const links = {
         0: {
             link: '/',
