@@ -1,8 +1,9 @@
 import Head from 'next/head';
 // Components
-import Header from '@components/ui/header/header/header.component';
-import MediaHeader from '@components/ui/header/media-header/media-header.component';
 import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
+import MediaHeader from '@components/ui/header/media-header/media-header.component';
+import Header from '@components/ui/header/header/header.component';
+import Footer from '@components/ui/footer/footer/footer.component';
 
 // Componente usado para envolver as páginas, evitando a repetição do código de Head das páginas e
 // garatindo um fallback padrão para o título e descrição das páginas.
@@ -34,6 +35,7 @@ export default function PageContainer({
                 {hasHeader && <MediaHeader />}
                 {hasHeader && <Header />}
                 {children}
+                {hasFooter && <Footer />}
             </main>
         </>
     );
