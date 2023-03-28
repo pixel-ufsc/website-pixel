@@ -1,0 +1,20 @@
+.link_button {
+    min-width: 100%;
+    padding: 0.7rem;
+    background: whitesmoke;
+    border-radius: 0.9rem;
+    text-align: center;
+    transition: all 0.15s ease-in-out;
+}
+.link_button:hover {
+    transform: scale(1.01);
+}
+.link_button_text {
+    font-family: 'KoHo';
+    font-display: swap;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #82337e;
+    text-decoration: none;
+    src: url(https://fonts.gstatic.com/s/koho/v16/K2FzfZ5fmddNNisssJ_DJaql.woff2) format('woff2');
+}
