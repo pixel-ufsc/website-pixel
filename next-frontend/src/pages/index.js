@@ -15,7 +15,7 @@ export default function Home() {
                     role={'Diretor de Comercial'}
                 />
                 <MemberCard />
-                <div style={{ margin: '20px 0', marginLeft: '5px' }}>
+                <div style={{ margin: '50px 0', marginLeft: '50px' }}>
                     <HoverableButton />
                 </div>
             </PageContainer>

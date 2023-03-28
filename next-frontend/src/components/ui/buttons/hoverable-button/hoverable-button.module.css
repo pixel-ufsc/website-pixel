@@ -1,4 +1,5 @@
 .button {
+    display: inline-block;
     background-color: transparent;
     background-image: linear-gradient(100deg, var(--color-purple) 0%, var(--color-blue) 100%);
     color: var(--color-white);
@@ -9,6 +10,13 @@
     line-height: 1.5rem;
     letter-spacing: 0.05rem;
 
-    padding: 12px 23px;
+    padding: calc(10.5rem / 16) calc(23rem / 16);
     border-radius: calc(1400rem / 16);
+
+    transition: background-color 0.3s linear, transform 0.45s linear;
+}
+
+.button:hover {
+    transform: translateY(3px);
+    background: #023047;
 }
