@@ -1,27 +1,25 @@
 .button {
     position: fixed;
-    bottom: -100px;
-    right: -100px;
-    z-index: 2;
+    bottom: -80px;
+    right: calc(26rem / 16);
+    z-index: 100;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: calc(60rem / 16);
-    height: calc(60rem / 16);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 
     background-color: var(--color-whatsapp);
     box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, 0.24);
 
     cursor: pointer;
-    transition: background-color 1s ease-in-out, bottom 3s cubic-bezier(0.14, 0.57, 0.01, 1);
-}
-
-.button_on_screen {
-    right: calc(30rem / 16);
-    bottom: calc(26rem / 16);
+    /* transition: background-color 1s ease-in-out, bottom 3s cubic-bezier(0.14, 0.57, 0.01, 1),
+        right 3s cubic-bezier(0.14, 0.57, 0.01, 1), transform 1s cubic-bezier(0.14, 0.57, 0.01, 1); */
+    animation: icon-pop 2s cubic-bezier(0.14, 0.57, 0.01, 1) forwards;
+    animation-delay: 3s;
 }
 
 .button:hover {
@@ -31,4 +29,16 @@
 .icon {
     width: calc(37rem / 16);
     shape-rendering: geometricPrecision;
+}
+
+@keyframes icon-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        bottom: calc(26rem / 16);
+    }
 }
