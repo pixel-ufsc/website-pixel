@@ -1,5 +1,14 @@
 .button {
+    position: relative;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
     background-color: transparent;
+    background-size: 300% 100%;
     background-image: linear-gradient(100deg, var(--color-purple) 0%, var(--color-blue) 100%);
     color: var(--color-white);
 
@@ -11,4 +20,13 @@
 
     padding: 12px 23px;
     border-radius: calc(1400rem / 16);
+
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.arrow {
+    height: calc(12rem / 16);
+    width: auto;
 }
