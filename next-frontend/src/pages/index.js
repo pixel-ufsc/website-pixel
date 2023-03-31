@@ -18,7 +18,6 @@ export default function Home() {
                     <HoverableButton href={'/servicos'} label={'Conheça nossos serviços'} arrowed />
                 </div>
             </PageContainer>
-            <WhatsappButton />
         </>
     );
 }
