@@ -4,15 +4,17 @@ import P from 'prop-types';
 // Assets
 import SmallRightArrowIcon from '@public/svgs/icons/small-right-arrow';
 
-export default function HoverableButton({ children, href, arrowed = true, ...props }) {
+export default function HoverableButton({ label, href, arrowed, ...props }) {
     return (
         <Link href={href ? href : '/'} className={styles.button} {...props}>
-            {children}
+            {label}
             {arrowed && <SmallRightArrowIcon color={'#FFF'} className={styles.arrow} />}
         </Link>
     );
 }
 
-/* HoverableButton.propTypes = {
-    children: P.node.isRequired,
-}; */
+HoverableButton.propTypes = {
+    label: P.node.isRequired,
+    href: P.string,
+    arrowed: P.bool,
+};

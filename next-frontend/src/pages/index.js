@@ -16,7 +16,7 @@ export default function Home() {
                 />
                 <MemberCard />
                 <div style={{ margin: '20px 0', marginLeft: '5px' }}>
-                    <HoverableButton href="/servicos">Conheça nossos serviços</HoverableButton>
+                    <HoverableButton href={'/servicos'} label={'Conheça nossos serviços'} arrowed />
                 </div>
             </PageContainer>
             <WhatsappButton />
