@@ -2,6 +2,7 @@
 import PageContainer from '@components/layout/page-container/page-container.component';
 import MemberCard from '@components/ui/card/member-card/member-card.component';
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
+import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                     <HoverableButton href={'/servicos'} label={'Conheça nossos serviços'} arrowed />
                 </div>
             </PageContainer>
+            <WhatsappButton />
         </>
     );
 }
