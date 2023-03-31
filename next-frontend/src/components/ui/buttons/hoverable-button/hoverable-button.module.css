@@ -13,10 +13,10 @@
     color: var(--color-white);
 
     font-family: 'KoHo', sans-serif;
-    font-size: calc(14rem / 16);
+    font-size: calc(16rem / 16);
     font-weight: 500;
     line-height: 1.5rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: calc(0.2rem / 16);
 
     padding: calc(10.5rem / 16) calc(23rem / 16);
     border-radius: calc(1400rem / 16);
