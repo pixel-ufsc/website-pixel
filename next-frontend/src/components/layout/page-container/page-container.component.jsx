@@ -1,7 +1,9 @@
 import Head from 'next/head';
-
-// Assets
-import styles from './page-container.module.css';
+// Components
+import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
+import MediaHeader from '@components/ui/header/media-header/media-header.component';
+import Header from '@components/ui/header/header/header.component';
+import Footer from '@components/ui/footer/footer/footer.component';
 
 // Componente usado para envolver as páginas, evitando a repetição do código de Head das páginas e
 // garatindo um fallback padrão para o título e descrição das páginas.
@@ -12,7 +14,14 @@ const fallback = {
         'Desenvolvendo soluções digitais que fazem a diferença. A Pixel é a empresa júnior de Ciências da Computação e de Sistemas de Informação da Universidade Federal de Santa Catarina (UFSC), sediada em Florianópolis.',
 };
 
-export default function PageContainer({ title, description, children }) {
+export default function PageContainer({
+    title,
+    description,
+    children,
+    hasHeader = true,
+    hasFooter = true,
+    hasWhatsappButton = true,
+}) {
     return (
         <>
             <Head>
@@ -21,7 +30,13 @@ export default function PageContainer({ title, description, children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.page_container}>{children}</main>
+            <main>
+                {hasWhatsappButton && <WhatsappButton />}
+                {hasHeader && <MediaHeader />}
+                {hasHeader && <Header />}
+                {children}
+                {hasFooter && <Footer />}
+            </main>
         </>
     );
 }

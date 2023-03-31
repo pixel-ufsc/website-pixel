@@ -1,6 +1,5 @@
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
-import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
 import MemberCard from '@components/ui/card/member-card/member-card.component';
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
