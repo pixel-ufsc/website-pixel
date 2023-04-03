@@ -44,10 +44,10 @@ export default function PoliticaPrivacidade() {
                     <article className={styles.topic}>
                         <h2>2. Qual o objetivo da coleta de dados?</h2>
                         <p>
-                            Nós, da Pixel Empresa Júnior &#8212; UFSC, fornecemos serviços voltados, mas não limitados,
-                            ao meio tecnológico. Dessa forma, é preciso a coleta de dados almejando dispor de
-                            informações personalizadas aos usuários do nosso site, visando o melhor desempenho da
-                            plataforma e proporcionar um maior entendimento sobre nossa atuação.
+                            Nós, da Pixel Empresa Júnior - UFSC, fornecemos serviços voltados, mas não limitados, ao
+                            meio tecnológico. Dessa forma, é preciso a coleta de dados almejando dispor de informações
+                            personalizadas aos usuários do nosso site, visando o melhor desempenho da plataforma e
+                            proporcionar um maior entendimento sobre nossa atuação.
                         </p>
                         <p>
                             Há, ainda, a hipótese de dados coletados objetivando o processo seletivo da Pixel, a qual se
@@ -162,25 +162,25 @@ export default function PoliticaPrivacidade() {
                         </p>
                         <ol>
                             <li>
-                                Google Drive &#8212;{' '}
+                                Google Drive -{' '}
                                 <a href="https://policies.google.com/privacy?hl=pt-BR">
                                     https://policies.google.com/privacy?hl=pt-BR
                                 </a>
                             </li>
                             <li>
-                                Pipefy &#8212;{' '}
+                                Pipefy -{' '}
                                 <a href="https://www.pipefy.com/pt-br/politica-de-privacidade">
                                     https://www.pipefy.com/pt-br/politica-de-privacidade/
                                 </a>
                             </li>
                             <li>
-                                Slack &#8212;{' '}
+                                Slack -{' '}
                                 <a href="https://slack.com/intl/pt-br/trust/privacy/privacy-policy">
                                     https://slack.com/intl/pt-br/trust/privacy/privacy-policy
                                 </a>
                             </li>
                             <li>
-                                WordPress &#8212;{' '}
+                                WordPress -{' '}
                                 <a href="https://br.wordpress.org/about/privacy/">
                                     https://br.wordpress.org/about/privacy/
                                 </a>
@@ -244,8 +244,8 @@ export default function PoliticaPrivacidade() {
                             É possível que o seu aparelho esteja configurado para autorizar os cookies de maneira
                             automática. É recomendado permitir o uso de cookies para uma experiência personalizada no
                             site Pixel, mas na hipótese em que desejar desativar os cookies, ainda que consciente que
-                            perderá certas funcionalidades do site &#8212; como o acesso automático durante o login
-                            &#8212; é possível desativar essa função a depender do navegador utilizado.
+                            perderá certas funcionalidades do site - como o acesso automático durante o login - é
+                            possível desativar essa função a depender do navegador utilizado.
                         </p>
                         <p>
                             Abaixo estão links de páginas dos principais navegadores para ajudar na gestão de cookies do
@@ -267,8 +267,7 @@ export default function PoliticaPrivacidade() {
                             <li>
                                 Google Chrome:{' '}
                                 <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=pt-BR">
-                                    Limpar, ativar e gerenciar cookies no Chrome &#8212; Computador &#8212; Ajuda do
-                                    Google Chrome
+                                    Limpar, ativar e gerenciar cookies no Chrome - Computador - Ajuda do Google Chrome
                                 </a>
                             </li>
                             <li>
@@ -330,8 +329,8 @@ export default function PoliticaPrivacidade() {
                             mudanças, por meio do e-mail que nos foi fornecido anteriormente, a fim de receber seu
                             devido consentimento. Depois que este for concedido, a nova política terá efeito imediato.
                         </p>
-                        <span>Última alteração: 09/06/2021</span>
                     </article>
+                    <span>Última alteração: 09/06/2021</span>
                 </div>
             </PageContainer>
             <WhatsappButton />

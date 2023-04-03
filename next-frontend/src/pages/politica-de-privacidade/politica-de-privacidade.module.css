@@ -3,3 +3,33 @@
 
 .topic {
 }
+
+.topic h2 {
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-black-gray);
+}
+
+.topic p,
+.contentWrapper span {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-black-gray);
+}
+
+.topic strong {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-black-gray);
+}
+
+.topic a {
+    color: var(--color-light-blue);
+    font-size: 1rem;
+}
+
+.topic ol li {
+    line-height: 1.9;
+}
