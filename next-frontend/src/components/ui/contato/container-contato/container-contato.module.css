@@ -1,0 +1,7 @@
+.containerContato {
+    display: flex;
+    flex-direction: space-between;
+    width: 100%;
+    padding: 10px 10%;
+    gap: 40px
+}
