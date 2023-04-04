@@ -10,7 +10,7 @@ export default function FormasDeContato() {
             <div className={styles.formaDeContato}>
                 <div className={styles.emailIconContainer}>
                     <Image 
-                        src="/mail.png" 
+                        src="/mail.svg" 
                         alt="Ícone do e-mail"
                         width={iconSize}
                         height={iconSize}
