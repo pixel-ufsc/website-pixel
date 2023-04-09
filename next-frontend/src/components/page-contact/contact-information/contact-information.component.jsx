@@ -14,6 +14,7 @@ export default function ContactInformation() {
                 </div>
                 <div className={styles.emailsListContainer}>
                     <p>Entre em contato com as seguintes áreas:</p>
+                    <br />
                     <p>
                         <strong>comercial</strong>@ejpixel.com.br,
                     </p>
