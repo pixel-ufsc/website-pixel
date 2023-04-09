@@ -1,0 +1,16 @@
+.formasDeContatoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.formaDeContato {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
