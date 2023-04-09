@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 24px 16px;
+    border-radius: 8px;
+
+    background: #f2fc99; /* Fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2fc99, #ebf0b0);
+    background: linear-gradient(to right, #f2fc99, #ebf0b0);
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.wrapper > .icon_container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper > .icon_container > #icon {
+    height: 26px;
+    width: 26px;
+}
+
+.wrapper > .text {
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    white-space: pre-line;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

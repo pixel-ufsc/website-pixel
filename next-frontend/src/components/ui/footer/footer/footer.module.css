@@ -3,6 +3,7 @@
     background-image: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);
 
     height: calc(75rem / 16);
+    margin-top: 32px;
     padding: 15px 5%;
 
     display: flex;
