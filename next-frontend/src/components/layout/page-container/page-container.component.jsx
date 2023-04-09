@@ -1,3 +1,4 @@
+import styles from './page-container.module.css';
 import Head from 'next/head';
 // Components
 import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
@@ -30,11 +31,11 @@ export default function PageContainer({
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
+            <main id={styles.main}>
                 {hasWhatsappButton && <WhatsappButton />}
                 {hasHeader && <MediaHeader />}
                 {hasHeader && <Header />}
-                {children}
+                <div id={styles.page_content}>{children}</div>
                 {hasFooter && <Footer />}
             </main>
         </>

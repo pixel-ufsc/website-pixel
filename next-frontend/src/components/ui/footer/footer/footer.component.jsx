@@ -1,15 +1,13 @@
+import styles from './footer.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-// Assets
-import styles from './footer.module.css';
-
-export default function Footer() {
+export default function Footer({ className, ...props }) {
     const router = useRouter();
     const pathname = router.pathname;
 
     return (
-        <footer className={styles.footer}>
+        <footer className={className ? `${styles.footer} ${className}` : `${styles.footer}`} {...props}>
             <div className={styles.links_container}>
                 <Link
                     href="/politica-de-privacidade"
