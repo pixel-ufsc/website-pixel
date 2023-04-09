@@ -1,7 +1,7 @@
 import styles from './member-card.module.css';
 import Image from 'next/image';
 
-export default function MemberCard({ imageSrc, name, role }) {
+export default function MemberCard({ imageSrc, name, role, ...imageProps }) {
     return (
         <div className={styles.container}>
             <div className={styles.image_wrapper}>
@@ -13,6 +13,7 @@ export default function MemberCard({ imageSrc, name, role }) {
                         src={imageSrc}
                         alt={name ? name : 'Foto do membro'}
                         quality={100}
+                        {...imageProps}
                     />
                 )}
             </div>

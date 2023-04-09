@@ -3,7 +3,7 @@ import { clientConfig } from './sanity.api';
 // Queries
 import { allDirectorsQuery, allMembersQuery } from './sanity.queries';
 
-const sanityClient = createClient(clientConfig);
+export const sanityClient = createClient(clientConfig);
 
 export async function getAllMembers() {
     return await sanityClient.fetch(allMembersQuery);
