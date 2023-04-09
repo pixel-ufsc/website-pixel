@@ -1,6 +1,6 @@
-import styles from './formulario-contato.module.css'
+import styles from './contact-form.module.css';
 
-export default function FormularioContato() {
+export default function ContactForm() {
     return (
         <form className={styles.form}>
             <input className={styles.input} type="text" placeholder="Nome completo" />
@@ -9,5 +9,5 @@ export default function FormularioContato() {
 
             <textarea className={styles.textarea} placeholder="Mensagem"></textarea>
         </form>
-    )
+    );
 }
