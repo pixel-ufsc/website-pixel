@@ -1,7 +1,23 @@
 .contentWrapper {
+    width: 100%;
+    padding: 2rem 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.lastModification {
+    align-self: flex-end;
+    margin-top: -0.5rem;
 }
 
 .topic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .topic h2 {
@@ -28,6 +44,21 @@
 .topic a {
     color: var(--color-light-blue);
     font-size: 1rem;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 152, 178, 0);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+
+    transition: text-decoration-color 0.2s ease-in-out;
+}
+
+.topic a:hover {
+    text-decoration-color: rgba(128, 152, 178, 1);
+}
+
+.topic ol {
+    margin-left: 2.25rem;
 }
 
 .topic ol li {
