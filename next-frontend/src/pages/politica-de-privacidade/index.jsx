@@ -2,7 +2,6 @@ import styles from './politica-de-privacidade.module.css';
 
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
-import WhatsappButton from '@components/ui/buttons/whatsapp-button/whatsapp-button.component';
 
 export default function PoliticaPrivacidade() {
     return (
@@ -333,7 +332,6 @@ export default function PoliticaPrivacidade() {
                     <span>Última alteração: 09/06/2021</span>
                 </div>
             </PageContainer>
-            <WhatsappButton />
         </>
     );
 }
