@@ -9,24 +9,25 @@
     width: fit-content;
 
     display: grid;
-    grid-template-columns: repeat(4, 256px);
-    grid-gap: 28px;
+    grid-template-columns: repeat(4, 240px);
+    grid-gap: 24px;
     justify-items: center;
 }
 
 @media screen and (max-width: 1400px) {
     .grid_wrapper {
-        grid-template-columns: repeat(3, 256px);
+        grid-template-columns: repeat(3, 200px);
     }
 }
 
-@media screen and (max-width: 62.5rem) {
+@media screen and (max-width: 50rem) {
     .grid_wrapper {
-        grid-template-columns: repeat(2, 256px);
+        grid-template-columns: repeat(2, 200px);
+        grid-gap: 20px;
     }
 }
 
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 500px) {
     .grid_wrapper {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
