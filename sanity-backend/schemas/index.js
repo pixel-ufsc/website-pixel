@@ -1,3 +1,9 @@
-import member from './member'
+import member from './documents/member'
+import information from './singletons/information'
 
-export const schemaTypes = [member]
+export const schemaTypes = [
+  member,
+
+  // Singleton schemas
+  information,
+]

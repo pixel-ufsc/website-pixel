@@ -15,10 +15,12 @@ export default function Home({ directorsData }) {
 }
 
 export async function getStaticProps() {
+    const socialData = await getAllSocialInfo();
     const directorsData = await getAllDirectors();
 
     return {
         props: {
+            socialData,
             directorsData,
         },
     };
