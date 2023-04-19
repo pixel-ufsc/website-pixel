@@ -12,7 +12,7 @@ const singletonTypes = new Set(['information'])
 
 export default defineConfig({
   name: 'default',
-  title: 'EJ Pixel - Website',
+  title: 'Pixel | Gerenciador',
 
   projectId: 'kz8lfba1',
   dataset: 'production',
