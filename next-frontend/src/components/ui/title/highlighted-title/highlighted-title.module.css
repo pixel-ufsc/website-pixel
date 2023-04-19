@@ -3,7 +3,7 @@
     width: fit-content;
 
     font-family: 'KoHo', 'Krub', sans-serif;
-    font-size: calc(50rem / 16);
+    font-size: calc(40rem / 16);
     font-weight: 600;
     line-height: 1;
     color: var(--color-primary);
