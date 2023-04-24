@@ -7,7 +7,7 @@ export default function Contato() {
     return (
         <PageContainer>
             <UnderMaintenance />
-            <ContactContainer />
+            {/* <ContactContainer /> */}
         </PageContainer>
     );
 }

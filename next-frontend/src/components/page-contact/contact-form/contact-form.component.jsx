@@ -1,4 +1,6 @@
 import styles from './contact-form.module.css';
+// Components
+import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
 export default function ContactForm() {
     return (
@@ -7,9 +9,7 @@ export default function ContactForm() {
             <input className={styles.input} type="text" placeholder="Seu e-mail" name="email" />
             <input className={styles.input} type="text" placeholder="Número de telefone" name="phone" />
             <textarea className={styles.textarea} placeholder="Mensagem" name="text-message" />
-            <button className={styles.button} type="submit">
-                Enviar
-            </button>
+            <HoverableButton label="Enviar" type="submit" />
         </form>
     );
 }
