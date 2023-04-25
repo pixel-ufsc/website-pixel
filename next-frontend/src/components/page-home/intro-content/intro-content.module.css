@@ -1,0 +1,29 @@
+.mainContainer {
+    min-height: calc(100vh - 10.3125rem);
+    width: 100%;
+    max-width: calc(100vw - 12rem);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.imageContainer {
+    position: relative;
+
+    height: 26.875rem;
+    object-fit: contain;
+}
+
+.textContainer h1 {
+    margin-bottom: 1.25rem;
+
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.22;
+    letter-spacing: 0.025rem;
+
+    color: var(--color-blue);
+}
