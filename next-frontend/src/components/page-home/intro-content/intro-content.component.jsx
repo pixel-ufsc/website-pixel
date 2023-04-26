@@ -8,15 +8,20 @@ import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-b
 export default function IntroContent() {
     return (
         <section className={styles.mainContainer}>
-            <div className={styles.textContainer}>
-                <h1>Desenvolvendo soluções digitais que fazem a diferença</h1>
-                <HoverableButton label={'Conheça nossos serviços'} href={'/servicos'} arrowed />
+            <div className={styles.contentWrapper}>
+                <div className={styles.textContainer}>
+                    <h1>Desenvolvendo soluções digitais que fazem a diferença.</h1>
+                    <HoverableButton label={'Conheça nossas soluções'} href={'/servicos'} arrowed />
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image
+                        src={introImage}
+                        alt="Celular e computador com planos de fundo que contém o logotipo e as cores da Pixel."
+                    />
+                </div>
             </div>
-            <div className={styles.imageContainer}>
-                <Image src={introImage} alt="" fill />
-            </div>
-            <span>
-                <MdKeyboardDoubleArrowDown /> Continue descendo
+            <span className={styles.iconContainer}>
+                <MdKeyboardDoubleArrowDown size={24} /> Continue descendo
             </span>
         </section>
     );
