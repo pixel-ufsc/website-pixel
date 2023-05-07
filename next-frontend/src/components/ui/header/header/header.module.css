@@ -35,6 +35,7 @@
 .horizontal_nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: calc(15px + 2vw);
 }
 
