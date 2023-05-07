@@ -8,214 +8,148 @@ export default function TermoDeUso() {
         <PageContainer>
             <div className={styles.contentWrapper}>
                 <article className={styles.topic}>
-                    <h2>Adicionar texto dos termos de uso</h2>
+                    <h2>1. Introdução: o que é e pra que serve um termo de uso?</h2>
                     <p>
-                        A Política de Privacidade é destinada a explanar a vida útil dos dados adquiridos através do
-                        nosso site, no qual você terá conhecimento acerca do tratamento dos dados coletados e sua
-                        destinação final. Logo, ciente, a Pixel, de que os dados pessoais são peças fundamentais dentro
-                        da confiança que se forma com os seus clientes, procuramos sempre prezar pela transparência
-                        sobre como trabalhamos diante de todas as informações cedidas a nós e como estas estarão
-                        seguras.
+                        O termo de uso é um documento elaborado para obter consentimento dos usuários sobre condições de
+                        navegação e utilização de diversos recursos do nosso site. Em sua redação, trazemos informações
+                        pertinentes ao uso e tratamento de dados pessoais, sempre em conformidade com a Lei Geral de
+                        Proteção de Dados Pessoais (Lei nº 13.709).
                     </p>
                     <p>
-                        Nesse sentido, a presente política foi regida sob a égide da Lei Geral de Proteção de Dados
-                        Pessoais (LGPD), de nº 13.709/2018, e do Marco civil da Internet, Lei nº 12.965/2014, que
-                        protegem os titulares dos dados pessoais e fornecem a eles uma gama de direitos, tais como: a
-                        garantia do uso objetivado dos dados, resguardando exclusivamente suas finalidades e objetivos,
-                        que estão redigidos dentro desta política, além da utilização das informações para as
-                        necessidades restritas e exclusivas aos serviços prestados pela Pixel.
+                        Queremos garantir aos nossos usuários segurança jurídica desde o início. Portanto, recomendamos
+                        também a leitura de nossa Política de Privacidade (inserir link). Enquanto o termo de uso versa
+                        mais sobre o uso geral do site, a política de privacidade regula e detalha como se dará todo o
+                        tratamento da Pixel sobre os dados fornecidos a nós, além de fornecer a finalidade de cada dado
+                        solicitado.
                     </p>
                     <p>
-                        Ao utilizar nosso site, considerando que se trata de informações de cunho pessoal, que
-                        possibilitam a identificação de quem as forneceram, imprescindível faz-se o seu consentimento
-                        sobre o que se pleiteia. Ademais, consideramos implícita a declaração do titular dos dados ser
-                        maior de idade, caso não o seja, é dever dos seus responsáveis legais a permissão para a
-                        concessão dos dados.
+                        É importante salientar que todas as obrigações aqui descritas deverão ser aceitas em sua
+                        plenitude por livre e espontânea vontade, podendo o usuário concordar ou não com elas. Será
+                        considerado que o termo foi consentido caso o usuário se cadastre ou forneça algum dado em nosso
+                        site. Não estará autorizado a se cadastrar aquele que não concordar com as disposições aqui
+                        descritas. Além disso, esses termos se aplicam tanto a pessoas naturais quanto a pessoas
+                        jurídicas.
                     </p>
                     <p>
-                        Por fim, reiteramos a especial preocupação da Pixel com o manuseio dos dados de nossos clientes,
-                        garantindo a sua responsabilidade conforme a Lei Geral de Proteção de Dados Pessoais, buscando
-                        fielmente a segurança dos dados e o resguardo de sua privacidade dentro da Empresa Júnior.
+                        Sendo assim, o presente termo estabelece uma relação obrigacional entre a Pixel e os usuários do
+                        nosso site. Uma vez consentida, o usuário não poderá alegar desconhecimento ou a não ciência das
+                        condições previstas neste termo ou em nossa Política de Privacidade.
                     </p>
                 </article>
                 <article className={styles.topic}>
-                    <h2>2. Qual o objetivo da coleta de dados?</h2>
+                    <h2>2. Cadastro e funcionalidades do site</h2>
                     <p>
-                        Nós, da Pixel Empresa Júnior - UFSC, fornecemos serviços voltados, mas não limitados, ao meio
-                        tecnológico. Dessa forma, é preciso a coleta de dados almejando dispor de informações
-                        personalizadas aos usuários do nosso site, visando o melhor desempenho da plataforma e
-                        proporcionar um maior entendimento sobre nossa atuação.
+                        Para obter acesso ao nosso canal de comunicação, qual seja o campo “Contato” ou “Fazer
+                        orçamento”, é exigido o preenchimento de um formulário que estão presentes nas abas da página
+                        inicial do site.
                     </p>
                     <p>
-                        Há, ainda, a hipótese de dados coletados objetivando o processo seletivo da Pixel, a qual se
-                        adequa aos casos daqueles que objetivam se inscrever no referido processo interno e,
-                        posteriormente, tentarem adentrar e fazer parte do quadro de membros efetivos da Empresa Júnior.
-                        Vale ressaltar que a seção do Processo Seletivo será disponibilizada esporadicamente no site nos
-                        momentos oportunos de recrutamento da empresa, podendo ser desativada do mesmo logo após o
-                        cumprimento de sua função, qual seja a colheita de dados necessários para inscrição dos
-                        candidatos.
+                        O usuário que fizer a utilização deste recurso, obriga-se a observar e respeitar os Termos e
+                        Condições de Uso, informando dados completos e válidos, sempre verídicos. Além disso, o usuário
+                        declara ser plenamente capaz, caso não seja, que possua um representante para exercer e usufruir
+                        da plataforma.
                     </p>
-                </article>
-                <article className={styles.topic}>
-                    <h2>3. Quais os dados coletados e quais são suas respectivas finalidades?</h2>
-                    <p>Os dados coletados em nossa plataforma têm as seguintes finalidades:</p>
-                    <ol>
-                        <li>
-                            Quanto ao <strong>nome</strong>, este permite a identificação do usuário;
-                        </li>
-                        <li>
-                            Em relação ao <strong>E-mail</strong>, este serve para ser um canal de comunicação junto com
-                            o usuário dos dados fornecidos, além de ser o canal de envio de nossa newsletter, caso o
-                            usuário queira;
-                        </li>
-                        <li>
-                            O <strong>número do celular</strong> também possui a finalidade de ser um canal de
-                            comunicação junto com o usuário dos dados.
-                        </li>
-                    </ol>
                     <p>
-                        Quanto aos dados relativos à inscrição no processo seletivo, são necessários mais informações
-                        com as seguintes finalidades:
+                        Os dados enviados pelo interessado, bem como aqueles fornecidos durante a execução do serviço,
+                        serão tratados pela Pixel, de acordo com o elencado em nossa Política de Privacidade. Dessa
+                        forma, após o envio do formulário, a equipe de comercial poderá entrar em contato para dar
+                        continuidade ao atendimento ao usuário/cliente.
+                    </p>
+                    <p>
+                        Para a realização do contato será necessário seguir o seguinte passo a passo na aba “Contato” ou
+                        “Fazer orçamento”:
                     </p>
                     <ol>
-                        <li>
-                            Quanto à <strong>foto</strong>, esta é destinada à identificação candidato, a fim de
-                            facilitar a interação nas dinâmicas internas da Pixel, além de uso histórico e de divulgação
-                            dos membros, quando necessário;
-                        </li>
-                        <li>
-                            Em relação às <strong>redes socias</strong>, esta serve para ser um canal de comunicação
-                            para determinadas funções da empresa, como também é destinada à identificação do membro;
-                        </li>
-                        <li>
-                            A <strong>idade</strong> serve para um parâmetro avaliativo, dentro dos moldes
-                            característicos do processo seletivo;
-                        </li>
-                        <li>
-                            Informações acerca do <strong>curso de graduação</strong>, quais sejam a área, o período, o
-                            ano previsto para conclusão, servem tanto para identificar aquele candidato, como também
-                            para critérios de avaliação.
-                        </li>
+                        <li>Inserir seu nome;</li>
+                        <li>Informar o e-mail para contato;</li>
+                        <li>Informar o número de telefone para contato;</li>
+                        <li>Digitar na aba "mensagem" o motivo de seu contato com a Pixel;</li>
+                        <li>Clicar no batão "Enviar E-mail".</li>
                     </ol>
-                </article>
-                <article className={styles.topic}>
-                    <h2>4. Como a coleta dos dados é realizada?</h2>
                     <p>
-                        A coleta de dados no site ocorre por meio do cadastro e fornecimento de cookies. O cadastro é
-                        totalmente voluntário, mas incentivamos sua efetivação para permitir um melhor manuseio dos
-                        serviços oferecidos na página online da Pixel.
+                        Também poderá ser possível entrar em contato diretamente através do WhatsApp da Pixel por meio
+                        de um clique no símbolo do aplicativo que se encontra na tela inicial do site.
                     </p>
                     <p>
-                        Ademais, é possível coleta de dados caso o usuário informe matérias extras voluntariamente por
-                        meio de comentários (ponto 5), mensagens ou na seção do Processo Seletivo do website.
+                        Assim que nossa equipe receber a sua mensagem, entraremos em contato através do e-mail fornecido
+                        para analisar a possibilidade de uma reunião de diagnóstico e, posteriormente, a elaboração e
+                        apresentação de proposta.
                     </p>
                     <p>
-                        Em relação a quaisquer dados relacionados ao nosso portfólio, esses são demonstrados com a
-                        permissão dos clientes da empresa, com o intuito de demonstrar a devida credibilidade da atuação
-                        da empresa.
+                        Acerca das funcionalidades presentes em nosso site, na tela inicial se encontra informações
+                        sobre nossos serviços, sobre a empresa, nosso blog, nosso portfólio, newsletter e durante a
+                        abertura do processo seletivo, poderá surgir esporadicamente a opção de inscrição através do
+                        site.
                     </p>
                 </article>
                 <article className={styles.topic}>
-                    <h2>5. Comentários do site</h2>
+                    <h2>3. Exoneração de responsabilidade</h2>
                     <p>
-                        Os dados fornecidos em comentários ou mensagens no site Pixel são feitos de maneira espontânea
-                        pelo usuário, sendo também armazenados e disponíveis para alteração, conforme o desejo expresso
-                        de quem os forneceu.
-                    </p>
-                    <p>
-                        Informamos que os referidos comentários são públicos e necessitam da identificação de quem os
-                        produziu. Nessa direção, o teor do conteúdo e as exposições presentes nos comentários são de
-                        responsabilidade de quem decidiu comentar. No entanto, há a possibilidade da exclusão ou
-                        mantimento do escrito, tanto por parte do seu criador quanto por parte da Pixel, se considerada
-                        necessária a proteção da empresa e dos demais usuários.
-                    </p>
-                </article>
-                <article className={styles.topic}>
-                    <h2>6. Como se dá o armazenamento dos dados?</h2>
-                    <p>
-                        Os dados coletados são mantidos em quatro plataformas, o Google Drive, Pipefy, Slack e no
-                        WordPress, onde hospedamos no nosso site, com o objetivo de garantir aprimoramento da segurança
-                        e organização na manipulação e armazenamento de informações em favor da melhoria dos serviços
-                        ofertados. Porém, as plataformas acima referidas possuem políticas próprias e desvinculadas da
-                        Pixel, que recomendamos conhecer.
-                    </p>
-                    <p>
-                        A cópia das suas informações permanece e se renova com a Pixel enquanto você tiver vínculo com a
-                        empresa; até a revogação explícita do consentimento dos dados pelo titular deles ou após o
-                        período constante no ponto 11.
-                    </p>
-                    <p>
-                        Os dados serão reservados principalmente na forma digital, porém aqueles que forem obtidos de
-                        forma digital poderão ser convertidos à forma física e vice-versa, se necessário à boa
-                        manipulação dos dados. Ressaltamos que a conversão de dados digitais para físicos não impede a
-                        devida proteção dos dados, como apontado no ponto 12.
-                    </p>
-                    <p>
-                        Portanto, questões relativas ao armazenamento, quando fornecidos os dados do usuário em nossa
-                        plataforma, eles também permanecerão nas plataformas que funcionam para a hospedagem, como o
-                        WordPress, assim como no Drive da empresa e nas plataformas de organização, Pipefy e Slack. Com
-                        isso, é muito importante ressaltar que, após o fornecimento, os dados também ficarão respaldados
-                        pelas seguintes políticas de privacidade:
+                        A Pixel não mede esforços para informar, proteger e atender seus clientes, porém estes são os
+                        únicos responsáveis pela correta utilização das ferramentas do nosso site e veracidade das
+                        informações nele expostas. Dessa forma, não nos responsabilizamos por qualquer prejuízo ou dano
+                        que os usuários venham a ter relacionados à má utilização da ferramenta. A Pixel se exime
+                        expressamente de:
                     </p>
                     <ol>
-                        <li>
-                            Google Drive -{' '}
-                            <a href="https://policies.google.com/privacy?hl=pt-BR">
-                                https://policies.google.com/privacy?hl=pt-BR
-                            </a>
-                        </li>
-                        <li>
-                            Pipefy -{' '}
-                            <a href="https://www.pipefy.com/pt-br/politica-de-privacidade">
-                                https://www.pipefy.com/pt-br/politica-de-privacidade/
-                            </a>
-                        </li>
-                        <li>
-                            Slack -{' '}
-                            <a href="https://slack.com/intl/pt-br/trust/privacy/privacy-policy">
-                                https://slack.com/intl/pt-br/trust/privacy/privacy-policy
-                            </a>
-                        </li>
-                        <li>
-                            WordPress -{' '}
-                            <a href="https://br.wordpress.org/about/privacy/">
-                                https://br.wordpress.org/about/privacy/
-                            </a>
-                        </li>
+                        <li>Envio de informações incorretas no formulário;</li>
+                        <li>Acesso ao site da Pixel por meio de navegadores não confiáveis;</li>
+                        <li>Impossibilidade do funcionamento de alguma função do site.</li>
                     </ol>
+                </article>
+                <article className={styles.topic}>
+                    <h2>4. Canais de comunicação</h2>
                     <p>
-                        Informamos que essas políticas de privacidade também são passíveis de mudança ao decorrer do
-                        tempo, sendo tais mudanças totalmente independentes da Pixel.
+                        A Pixel leva em média 3 (três) dias corridos, contados a partir da data de envio do formulário
+                        de contato, para responder às mensagens que são enviadas ao nosso e-mail:{' '}
+                        <a href="mailto:ejpixel@ejpixel.com.br" target="_blank">
+                            ejpixel@ejpixel.com.br
+                        </a>
+                        ou ao nosso WhatsApp:{' '}
+                        <a href="https://wa.a/p069um" target="_blank">
+                            +55 (48) 99144-7023
+                        </a>
+                        . Desta feita, o usuário autoriza, pelos mais variados meios, incluindo redes sociais, mas não
+                        se limitando a elas, a abertura de canais de comunicação por parte da Pixel, a fim de
+                        proporcionar o diálogo a respeito da nossa área de atuação e serviços almejados pelo usuário.
                     </p>
                 </article>
                 <article className={styles.topic}>
-                    <h2>7. O tratamento dos dados</h2>
+                    <h2>5. Propriedade intelectual</h2>
                     <p>
-                        O tratamento dos dados pessoais diz respeito a toda e qualquer atividade realizada com os dados
-                        pessoais de terceiros, desde a coleta até sua extinção. As finalidades de cada dado coletado
-                        pela Pixel estão descritas no ponto 3, já citado. Assim exposto, é de competência do controlador
-                        a tomada de decisões referente ao tratamento dos dados, do operador a manipulação das
-                        informações fornecidas e coletadas, assim como do encarregado de ser um canal de comunicação
-                        entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD).
-                        Na Pixel, o responsável pela função de controlador é o Diretor de Gestão Interna, sendo este
-                        atuante também como operador, dividindo tal função com o Diretor de Comercial, tendo, por fim,
-                        como função de encarregado o Diretor Presidente da Pixel, com base no artigo 41 da LGPD.
+                        A Pixel preza pelo respeito à propriedade intelectual de terceiros e espera que seus usuários
+                        façam o mesmo. Portanto, é importante ressaltar a conformidade do presente termo com o Marco
+                        Civil da Internet (Lei n° 12.965/2014) e com a Lei de Direitos Autorais (Lei Federal nº
+                        8.906/1994). Assim sendo, fica estabelecido que todo conteúdo produzido nesse site,
+                        independentemente de autoria, é de responsabilidade da Pixel como instituição, devendo ser
+                        direcionada a ela qualquer tipo de obrigação, mérito, reconhecimento ou consequência proveniente
+                        de qualquer produção.
+                    </p>
+                    <p>
+                        Além disso, a Pixel não se responsabiliza por nenhum dano ou prejuízo gerado pela má
+                        interpretação dos conteúdos publicados em seu blog, bem como a desconformidade, imprecisão ou
+                        desatualização das informações ali expostas.
                     </p>
                 </article>
                 <article className={styles.topic}>
-                    <h2>8. Os dados serão compartilhados?</h2>
+                    <h2>6. Alterações nesta política</h2>
                     <p>
-                        Os dados depositados em nosso site serão de acesso exclusivo aos membros da Pixel, não sendo
-                        estes compartilhados com terceiros. No entanto, há divulgação de dados de pessoas vinculadas à
-                        Pixel em nossas plataformas digitais, a qual ocorre com o intuito de promover transparência,
-                        acessibilidade e divulgação de suas competências aos usuários de nossas redes sociais, a exemplo
-                        da evidenciação de nossos tutores representantes, imagens e identificação de membros atuais e
-                        passados, e recolhimento de informações na seção “Processo Seletivo” para uso interno. Logo,
-                        aqueles vinculados consentem no uso de seus dados divulgados no site, podendo requerer, via
-                        expressa e a todo momento, a retirada de seus dados do site.
+                        A Pixel se reserva ao direito de modificar e/ou atualizar seus termos sempre que considerar
+                        necessário, portanto, aconselhamos que esse documento seja lido sempre que possível. Fica eleito
+                        desde já o foro da comarca de Florianópolis/SC para solucionar eventuais omissões ou
+                        controvérsias oriundas deste termo. Depois que obtido o consentimento do usuário, esse documento
+                        terá efeito imediato.
+                    </p>
+                    <p>
+                        Por fim,{' '}
+                        <strong>
+                            o usuário declara ter lido atentamente e compreendido os termos e condições aqui dispostos,
+                            além de estar ciente de todo o seu teor, expressando seu consentimento de maneira livre,
+                            informada, inequívoca e expressa.
+                        </strong>
                     </p>
                 </article>
-                <span className={styles.lastModification}>Última alteração: 09/06/2021</span>
+                <span className={styles.lastModification}>Última alteração: 17/12/2021</span>
             </div>
         </PageContainer>
     );
