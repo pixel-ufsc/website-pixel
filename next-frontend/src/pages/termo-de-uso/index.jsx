@@ -106,7 +106,7 @@ export default function TermoDeUso() {
                             ejpixel@ejpixel.com.br
                         </a>{' '}
                         ou ao nosso WhatsApp:{' '}
-                        <a href="https://wa.a/p069um" target="_blank">
+                        <a href="https://wa.me/554891447023" target="_blank">
                             +55 (48) 99144-7023
                         </a>
                         . Desta feita, o usuário autoriza, pelos mais variados meios, incluindo redes sociais, mas não
