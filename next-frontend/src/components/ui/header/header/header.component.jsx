@@ -7,8 +7,9 @@ import PixelLogoHorizontal from '@public/svgs/pixel/pixel-logo-horizontal';
 // Components
 import { Squash } from './hamburguer-icon/squash-hamburger.component';
 import HeaderButton from './header-button/header-button.component';
+import SelectionProcessButton from '@components/ui/buttons/selection-process-button/selection-process-button.component';
 
-function Navigation({ mobile }) {
+function Navigation({ mobile, isSelectionProcessActive = false }) {
     const router = useRouter();
     const pathsArray = router.pathname.split('/').splice(1);
 
@@ -29,6 +30,7 @@ function Navigation({ mobile }) {
             <HeaderButton href="/contato" selected={pathsArray[0] === 'contato'}>
                 Contato
             </HeaderButton>
+            {!!isSelectionProcessActive && <SelectionProcessButton />}
         </nav>
     );
 }
