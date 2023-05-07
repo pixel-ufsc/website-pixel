@@ -2,7 +2,6 @@ import styles from './../politica-de-privacidade/politica-de-privacidade.module.
 
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
-import UnderMaintenance from '@components/ui/under-maintenance/under-maintenance.component';
 
 export default function TermoDeUso() {
     return (
@@ -105,7 +104,7 @@ export default function TermoDeUso() {
                         de contato, para responder às mensagens que são enviadas ao nosso e-mail:{' '}
                         <a href="mailto:ejpixel@ejpixel.com.br" target="_blank">
                             ejpixel@ejpixel.com.br
-                        </a>
+                        </a>{' '}
                         ou ao nosso WhatsApp:{' '}
                         <a href="https://wa.a/p069um" target="_blank">
                             +55 (48) 99144-7023
