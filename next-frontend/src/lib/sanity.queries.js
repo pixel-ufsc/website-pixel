@@ -23,3 +23,17 @@ export const allDirectorsQuery = groq`
 		}
 	}
 `;
+
+export const allSocialInfoQuery = groq`
+	*[_type == "information"] {
+		_createdAt, _id, _rev, _type, _updatedAt,
+		"data": {
+			instagram_url,
+			facebook_url,
+			linkedin_url,
+			tiktok_url,
+			whatsapp_url,
+			contact_email,
+		}
+	}
+`;

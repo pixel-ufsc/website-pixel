@@ -1,0 +1,38 @@
+.title {
+    position: relative;
+    width: fit-content;
+
+    font-family: 'KoHo', 'Krub', sans-serif;
+    font-size: calc(40rem / 16);
+    font-weight: 600;
+    line-height: 1;
+
+    text-align: center;
+}
+
+.title#white {
+    color: var(--color-white);
+}
+.title#purple {
+    color: var(--color-purple);
+}
+.title#purple_gradient {
+    color: var(--color-purple); /* Fallback color */
+
+    background-image: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 50rem) {
+    /* 50rem = 800px */
+    .title {
+        font-size: calc(32rem / 16);
+    }
+}

@@ -6,6 +6,13 @@
     width: 50%;
 }
 
-.input, .textarea {
+.input,
+.textarea {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
 }
