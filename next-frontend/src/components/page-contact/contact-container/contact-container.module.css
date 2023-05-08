@@ -10,8 +10,14 @@
 .wrapper {
     width: 100%;
     max-width: 1000px;
+    padding: 24px 0;
 
     display: flex;
     flex-direction: column;
     gap: 80px;
+}
+
+.title {
+    margin-top: 12px;
+    margin-bottom: 48px;
 }

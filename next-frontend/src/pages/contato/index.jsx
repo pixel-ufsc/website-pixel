@@ -6,8 +6,7 @@ import UnderMaintenance from '@components/ui/under-maintenance/under-maintenance
 export default function Contato() {
     return (
         <PageContainer>
-            <UnderMaintenance />
-            {/* <ContactContainer /> */}
+            <ContactContainer />
         </PageContainer>
     );
 }
