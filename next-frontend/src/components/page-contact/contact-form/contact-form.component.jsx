@@ -4,7 +4,13 @@ import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-b
 
 export default function ContactForm() {
     return (
-        <form className={styles.form} action="/sucesso" method="POST" data-netlify="true">
+        <form
+            className={styles.form}
+            action="contato/submission?success=true"
+            method="POST"
+            data-netlify="true"
+            onSubmit={() => console.log('Form submitted!')}
+        >
             <div className={styles.form_element}>
                 <label className={styles.label} htmlFor="name">
                     Nome completo
