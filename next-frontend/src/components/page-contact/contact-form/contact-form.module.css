@@ -86,3 +86,14 @@
     width: 200px !important;
     border-radius: 10px !important;
 }
+
+@media (max-width: 37.5rem) {
+    .form {
+        align-items: center;
+    }
+
+    #submit_button {
+        width: initial !important;
+        max-width: 80%;
+    }
+}

@@ -14,10 +14,16 @@
 
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
 .title {
     margin-top: 12px;
     margin-bottom: 48px;
+}
+
+@media (max-width: 37.5rem) {
+    .container {
+        padding: 10px 5%;
+    }
 }
