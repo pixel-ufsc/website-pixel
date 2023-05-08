@@ -10,7 +10,9 @@
 .wrapper {
     width: 100%;
     max-width: 1000px;
-    padding: 24px 0;
+
+    padding-bottom: 24px;
+    padding-top: 36px;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +26,17 @@
 
 @media (max-width: 37.5rem) {
     .container {
-        padding: 10px 5%;
+        padding: 0 5%;
+    }
+
+    .wrapper {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        gap: 50px;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 32px;
     }
 }
