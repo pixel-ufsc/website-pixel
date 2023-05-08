@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
 
     border-radius: 100px;
     color: var(--color-white);
@@ -21,7 +21,7 @@
 }
 
 .button:hover {
-    transform: translateY(-4px);
+    transform: translateY(2px);
 }
 
 .button::before {
