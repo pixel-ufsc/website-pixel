@@ -27,21 +27,8 @@
     color: var(--color-white);
 }
 
-.footer a {
-    text-decoration: underline;
-    text-decoration-color: rgba(var(--color-purple-rgb), 0);
-    text-underline-offset: calc(6rem / 16);
-    text-decoration-thickness: 1.5px;
-
-    transition: text-decoration-color 0.1s ease-in-out;
-}
-
 .footer a.active {
-    font-weight: 600;
-}
-
-.footer a:hover {
-    text-decoration-color: rgba(var(--color-purple-rgb), 1);
+    font-weight: 500;
 }
 
 @media (max-width: calc(620rem / 16)) {
