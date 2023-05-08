@@ -6,6 +6,7 @@ export default function ContactForm() {
     return (
         <form
             className={styles.form}
+            name="Form - Contact Page"
             action="contato/submission?success=true"
             method="POST"
             data-netlify="true"
