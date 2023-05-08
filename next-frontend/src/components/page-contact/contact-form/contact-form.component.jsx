@@ -32,7 +32,7 @@ export default function ContactForm() {
                 </label>
                 <textarea className={styles.textarea} placeholder="Escreva aqui mensagem..." name="text-message" />
             </div>
-            <HoverableButton label="Enviar mensagem" type="submit" arrowed={true} className={styles.submit_button} />
+            <HoverableButton label="Enviar mensagem" type="submit" arrowed={true} id={styles.submit_button} />
         </form>
     );
 }

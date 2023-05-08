@@ -6,8 +6,10 @@ import ContactInformation from '../contact-information/contact-information.compo
 export default function ContactContainer() {
     return (
         <div className={styles.container}>
-            <ContactForm />
-            <ContactInformation />
+            <div className={styles.wrapper}>
+                <ContactForm />
+                <ContactInformation />
+            </div>
         </div>
     );
 }
