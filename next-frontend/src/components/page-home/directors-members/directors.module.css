@@ -1,4 +1,6 @@
 .container {
+    margin-top: 3.125rem;
+
     width: 100%;
 
     display: flex;
