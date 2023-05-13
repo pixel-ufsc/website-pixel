@@ -3,26 +3,27 @@
     --color-purple: #82337e;
     --color-pink: #f3daf1;
     --color-blue: #023047;
+    --color-yellow: #fcbf49;
+    --color-orange: #f98222;
     --color-white: #fff;
     --color-whatsapp: #25d366;
     --color-black-gray: #444;
     --color-light-blue: #1691aa;
     --color-text: #242328;
-    /* --e-global-color-secondary: #54595f;
-    --e-global-color-text: #7a7a7a;
-    --e-global-color-accent: #61ce70;
-    --e-global-color-2644648: #4054b2;
-    --e-global-color-3f8b8c84: #23a455;
-    --e-global-color-2573139f: #000; */
 
     /* RGB Color */
     --color-purple-rgb: 130, 51, 126;
     --color-pink-rgb: 243, 218, 241;
     --color-blue-rgb: rgb(2, 48, 71);
+    --color-yellow-rgb: rgb(252, 191, 73);
+    --color-orange-rgb: rgb(249, 130, 34);
     --color-white-rgb: rgb(255, 255, 255);
     --color-whatsapp-rgb: rgb(37, 211, 102);
     --color-black-gray-rgb: rgb(68, 68, 68);
     --color-light-blue-rgb: rgb(22, 145, 170);
+
+    /* Gradients */
+    --gradient-purple: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);
 }
 
 * {
@@ -35,6 +36,9 @@ html,
 body {
     max-width: 100vw;
     font-family: 'Krub', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -52,8 +56,8 @@ button {
 }
 
 ::-moz-selection {
-    background: rgba(var(--color-pink-rgb), 0.5);
+    background: rgba(151, 216, 229, 0.4);
 }
 ::selection {
-    background: rgba(var(--color-pink-rgb), 0.5);
+    background: rgba(162, 218, 230, 0.4);
 }
