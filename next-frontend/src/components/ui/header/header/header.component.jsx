@@ -3,11 +3,12 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 // Assets
-import PixelLogoHorizontal from '@public/svgs/pixel/pixel-logo-horizontal';
+import PixelIconFlat from '@public/svgs/pixel/pixel-icon-flat';
 // Components
 import { Squash } from './hamburguer-icon/squash-hamburger.component';
 import HeaderButton from './header-button/header-button.component';
 import SelectionProcessButton from '@components/ui/buttons/selection-process-button/selection-process-button.component';
+import PixelIconColored from '@public/svgs/pixel/pixel-icon-colored';
 
 function Navigation({ mobile, isSelectionProcessActive = false }) {
     const router = useRouter();
@@ -51,7 +52,7 @@ export default function Header() {
             </div>
             <header className={styles.container}>
                 <Link href={'/'} className={styles.logo_wrapper}>
-                    <PixelLogoHorizontal className={styles.logo} />
+                    <PixelIconColored className={styles.logo} />
                 </Link>
                 <Navigation />
                 <button className={styles.mobile_hamburger_icon}>
