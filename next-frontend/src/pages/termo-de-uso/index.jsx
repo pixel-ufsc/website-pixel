@@ -1,12 +1,12 @@
-import styles from './../politica-de-privacidade/politica-de-privacidade.module.css';
-
+import styles from './termo-de-uso.module.css';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
+import ArticleContainer from '@components/layout/article-container/article-container.component';
 
 export default function TermoDeUso() {
     return (
         <PageContainer>
-            <div className={styles.contentWrapper}>
+            <ArticleContainer className={styles.contentWrapper}>
                 <article className={styles.topic}>
                     <h2>1. Introdução: o que é e pra que serve um termo de uso?</h2>
                     <p>
@@ -150,7 +150,7 @@ export default function TermoDeUso() {
                     </p>
                 </article>
                 <span className={styles.lastModification}>Última alteração: 17/12/2021</span>
-            </div>
+            </ArticleContainer>
         </PageContainer>
     );
 }

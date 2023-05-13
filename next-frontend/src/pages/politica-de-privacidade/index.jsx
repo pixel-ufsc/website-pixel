@@ -1,12 +1,12 @@
 import styles from './politica-de-privacidade.module.css';
-
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
+import ArticleContainer from '@components/layout/article-container/article-container.component';
 
 export default function PoliticaPrivacidade() {
     return (
         <PageContainer>
-            <div className={styles.contentWrapper}>
+            <ArticleContainer className={styles.contentWrapper}>
                 <article className={styles.topic}>
                     <h2>1. Porque temos uma Política de Privacidade?</h2>
                     <p>
@@ -326,7 +326,7 @@ export default function PoliticaPrivacidade() {
                     </p>
                 </article>
                 <span className={styles.lastModification}>Última alteração: 09/06/2021</span>
-            </div>
+            </ArticleContainer>
         </PageContainer>
     );
 }
