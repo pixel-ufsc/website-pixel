@@ -31,7 +31,7 @@ export default function Sobre({ membersData }) {
                     src={aboutUsImage}
                     width={617}
                     height={617}
-                    alt="Ilustração de quatro pessoas representando os membros da Pixel. No plano de fundo,, tem-se uma página web com o logotipo da empresa."
+                    alt="Ilustração de quatro pessoas representando os membros da Pixel. No plano de fundo, tem-se uma página web com o logotipo da empresa."
                 />
             </section>
             <section className={styles.members}>
