@@ -17,17 +17,18 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-
     overflow: hidden;
 
     background-color: #f3f3f3;
-
     border-bottom: 1px solid #eaeaea;
 }
 
 .image {
     object-fit: cover;
     pointer-events: none;
+
+    /* filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out; */
 }
 
 .title_wrapper {

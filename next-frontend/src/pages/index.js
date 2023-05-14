@@ -1,5 +1,5 @@
 // Lib
-import { getAllDirectors, getAllSocialInfo } from '@lib/sanity.client';
+import { getAllDirectors, getAllProjectsPreview, getAllSocialInfo } from '@lib/sanity.client';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
 import IntroContent from '@components/page-home/intro-content/intro-content.component';
@@ -9,16 +9,18 @@ import Services from '@components/page-home/services/services.component';
 import PortfolioPreview from '@components/page-home/portfolio-preview/portfolio-preview.component';
 import SectionDivider from '@components/ui/section-divider/section-divider.component';
 
-export default function Home({ directorsData }) {
+export default function Home({ directorsData, projectsPreviewData }) {
     return (
         <PageContainer>
             <IntroContent />
             <AboutUs />
             <SectionDivider />
-            <PortfolioPreview />
+            <PortfolioPreview projectsPreview={projectsPreviewData} />
+            <SectionDivider />
+            <Services />
             <SectionDivider />
             <Directors directors={directorsData} />
-            <Services />
+            <SectionDivider />
         </PageContainer>
     );
 }
@@ -26,11 +28,13 @@ export default function Home({ directorsData }) {
 export async function getStaticProps() {
     const socialData = await getAllSocialInfo();
     const directorsData = await getAllDirectors();
+    const projectsPreviewData = await getAllProjectsPreview();
 
     return {
         props: {
             socialData,
             directorsData,
+            projectsPreviewData,
         },
     };
 }
