@@ -25,14 +25,13 @@ export default function PortfolioPreview({ projectsPreview }) {
             <SliderCarousel containerClassName={styles.slider_container} wrapperClassName={styles.slider_items_wrapper}>
                 {projectsPreview?.map((project, index) => {
                     const imageProps = useNextSanityImage(sanityClient, project?.data?.preview_image);
-                    console.log(imageProps);
                     return (
                         <ProjectPreviewCard
                             key={index}
                             title={project?.data?.name}
                             tags={project?.data?.tags}
                             imageSrc={imageProps?.src}
-                            href={`/portfolio/${project?.data?.slug}`}
+                            href={`/portfolio/${project?.data?.slug?.current}`}
                         />
                     );
                 })}
