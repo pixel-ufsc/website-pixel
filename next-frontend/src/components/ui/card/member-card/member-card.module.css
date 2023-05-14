@@ -7,8 +7,7 @@
     padding: 12px;
 
     background-color: white;
-    border-radius: 6%;
-    box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.2);
+
     transition: box-shadow 0.25s ease-in-out;
 
     display: flex;
@@ -23,7 +22,7 @@
 }
 
 .container:hover {
-    box-shadow: 0 0 10px 1px rgba(129, 51, 125, 0.37);
+    box-shadow: 0 0 4px 1px rgba(129, 51, 125, 0.274);
 }
 
 .image_wrapper {
