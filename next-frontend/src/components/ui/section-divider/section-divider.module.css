@@ -1,0 +1,17 @@
+.divider {
+    width: 100%;
+}
+
+@media (min-width: 62.5rem) {
+    /* 62.5rem = 1000px */
+    .divider {
+        height: 5rem;
+    }
+}
+
+@media (max-width: 62.5rem) {
+    /* 62.5rem = 1000px */
+    .divider {
+        height: 5rem;
+    }
+}

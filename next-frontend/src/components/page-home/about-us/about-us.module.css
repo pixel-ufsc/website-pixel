@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 0 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+}
+
+.about_description {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about_description > p {
+    font-family: 'Krub', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(16rem / 16);
+    line-height: 1.75;
+    color: #023047;
+
+    white-space: pre-line;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+@media (max-width: 62.5rem) {
+    /* 62.5rem = 1000px */
+    .container {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .icon_wrapper {
+        height: 240px;
+        width: 240px;
+    }
+}

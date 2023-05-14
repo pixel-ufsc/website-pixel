@@ -3,16 +3,12 @@
     font-weight: 500;
     text-transform: capitalize;
 
-    text-decoration: underline;
-    text-decoration-color: rgba(var(--color-purple-rgb), 0);
-    text-underline-offset: calc(6rem / 16);
-    text-decoration-thickness: 1.5px;
-
-    transition: text-decoration-color 0.1s ease-in-out;
+    color: #666;
+    transition: color 0.15s ease-in-out;
 }
 
 .button:hover {
-    text-decoration-color: rgba(var(--color-purple-rgb), 1);
+    color: var(--color-blue);
 }
 
 .button.selected {

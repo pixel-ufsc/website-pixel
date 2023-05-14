@@ -1,6 +1,4 @@
 .container {
-    margin-top: 3.125rem;
-
     width: 100%;
 
     display: flex;
@@ -8,8 +6,6 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-
-    padding: 40px 0;
 }
 
 .link {
@@ -31,19 +27,69 @@
 }
 
 .circle {
+    position: relative;
+    overflow: hidden;
+
     min-width: 200px;
     min-height: 200px;
     border-radius: 50%;
 
     background: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);
+    color: var(--color-white);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4px;
+}
 
-    color: var(--color-white);
+.hover_content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover_circle {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-blue);
+
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s cubic-bezier(0.17, 0.72, 0.3, 1);
+}
+
+.group_icon {
+    width: 40%;
+    height: 40%;
+    z-index: 3;
+    shape-rendering: geometricPrecision;
+    color: white;
+
+    opacity: 0;
+    transform: translateX(-200%) translateY(-3px);
+    transition: opacity 0.8s cubic-bezier(0.17, 0.72, 0.3, 1), transform 0.8s cubic-bezier(0.17, 0.72, 0.3, 1);
+}
+
+.circle:hover .hover_circle {
+    transform: scale(1);
+}
+
+.circle:hover .group_icon {
+    opacity: 1;
+    transform: translateX(0) translateY(-3px);
 }
 
 .slider_container {

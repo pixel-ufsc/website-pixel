@@ -1,6 +1,6 @@
 import styles from './sobre.module.css';
 import Image from 'next/image';
-import aboutUsImage from '@public/about-us.png';
+import aboutUsImage from '@public/images/about-us.png';
 
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';

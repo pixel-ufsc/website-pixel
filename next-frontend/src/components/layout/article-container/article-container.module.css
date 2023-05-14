@@ -1,0 +1,51 @@
+.container article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.container h2 {
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-black-gray);
+}
+
+.container p,
+.contentWrapper span {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-black-gray);
+}
+
+.container strong {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-black-gray);
+}
+
+.container a {
+    color: var(--color-light-blue);
+    font-size: 1rem;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 152, 178, 0);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+
+    transition: text-decoration-color 0.2s ease-in-out;
+}
+
+.container a:hover {
+    text-decoration-color: rgba(128, 152, 178, 1);
+}
+
+.container ol {
+    margin-left: 2.25rem;
+}
+
+.container ol li {
+    line-height: 1.9;
+}

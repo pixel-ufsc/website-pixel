@@ -37,3 +37,15 @@ export const allSocialInfoQuery = groq`
 		}
 	}
 `;
+
+export const allProjectsPreviewQuery = groq`
+	*[_type == "project"] | order(_createdAt desc) {
+		_createdAt, _id, _rev, _type, _updatedAt,
+		"data": {
+			name,
+			slug,
+			preview_image,
+			tags,
+		}
+	}
+`;
