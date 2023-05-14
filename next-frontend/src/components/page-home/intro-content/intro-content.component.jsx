@@ -6,12 +6,12 @@ export default function IntroContent() {
         <section className={styles.container}>
             <h1 className={styles.title}>
                 {'Desenvolvendo '}
-                <span className={styles.gradient}>{'soluções digitais'}</span>
+                <span className={styles.gradient}>soluções&nbsp;digitais</span>
                 {'\n que fazem a diferença'}
             </h1>
-            {/* <Link href={'/servicos'} className={styles.link}>
-                {'Conheça nossas soluções >'}
-            </Link> */}
+            <div className={styles.icon_wrapper}>
+                <div id={styles.pixel_icon}></div>
+            </div>
         </section>
     );
 }
