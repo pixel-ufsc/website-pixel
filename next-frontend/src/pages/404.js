@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Custom404() {
     return (
-        <PageContainer hasFooter={false}>
+        <PageContainer>
             <section className={styles.contentWrapper}>
                 <div className={styles.textContainer}>
                     <span>Erro</span>
