@@ -69,9 +69,9 @@
     display: none;
     width: calc((180rem / 16) + 4vw);
     max-width: 75vw;
-    height: 100vh;
+    height: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1001;
@@ -86,7 +86,8 @@
 
 .mobile_menu_wrapper {
     height: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(20px);
 
     padding: 20%;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
