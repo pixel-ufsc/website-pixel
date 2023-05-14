@@ -1,5 +1,6 @@
 import {RiArchiveLine, RiSettings5Line, RiInformationLine} from 'react-icons/ri'
 import {BsFilePersonFill} from 'react-icons/bs'
+import {BsFillClipboardCheckFill} from 'react-icons/bs'
 
 export const deskStructure = (S) =>
   S.list()
@@ -9,7 +10,10 @@ export const deskStructure = (S) =>
         .title('Membros')
         .icon(BsFilePersonFill)
         .child(S.documentTypeList('member').title('Membros')),
-      /* S.listItem().title('Products').child(S.documentTypeList('product').title('Products')), */
+      S.listItem()
+        .title('Portfólio de projetos')
+        .icon(BsFillClipboardCheckFill)
+        .child(S.documentTypeList('project').title('Portfólio de projetos')),
       S.divider(),
       S.listItem()
         .title('Information')
