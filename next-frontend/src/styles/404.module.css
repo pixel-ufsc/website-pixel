@@ -1,0 +1,71 @@
+.contentWrapper {
+    min-height: 85vh;
+    padding: 7% 9% 0;
+
+    background-image: url('./../../public//pixel-white-svg.svg');
+    background-position: right;
+    background-position-y: -40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.textContainer {
+    width: 53rem;
+}
+
+.textContainer > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+
+    background-color: #ffede8;
+    padding: 0.25rem 1rem;
+    border-radius: 29px;
+
+    font-size: 1rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: #c57857;
+}
+
+.textContainer > h1 {
+    margin: 1rem 0 2rem;
+
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.15;
+    color: var(--color-blue);
+    letter-spacing: 1px;
+}
+
+.textContainer > p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    letter-spacing: 0.16px;
+    color: var(--color-blue);
+}
+
+.textContainer > p > a {
+    text-decoration: underline var(--color-blue) solid 1.5px;
+    text-underline-offset: 1.5px;
+}
+
+.custom404 {
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 13rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    background-image: linear-gradient(91.76deg, #e7b537 29.68%, #b145aa 99.28%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
