@@ -4,15 +4,12 @@
     align-items: center;
 
     width: 100%;
-    padding: 10px 15%;
+    padding: 10vh 15% 40px 15%;
 }
 
 .wrapper {
     width: 100%;
     max-width: 1000px;
-
-    padding-bottom: 24px;
-    padding-top: 36px;
 
     display: flex;
     flex-direction: column;
@@ -20,8 +17,7 @@
 }
 
 .title {
-    margin-top: 12px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 @media (max-width: 37.5rem) {
