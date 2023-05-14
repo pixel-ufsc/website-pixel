@@ -7,7 +7,9 @@ import { sanityClient } from '@lib/sanity.client';
 // Components
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 import MemberCard from '@components/ui/card/member-card/member-card.component';
-import SliderCarousel from './slider-carousel/slider-carousel.component';
+import SliderCarousel from '@components/ui/slider-carousel/slider-carousel.component';
+// Assets
+import { HiUserGroup } from 'react-icons/hi';
 
 export default function Directors({ title, directors }) {
     return (
@@ -30,6 +32,10 @@ export default function Directors({ title, directors }) {
                 <Link href={'/sobre'} className={styles.link}>
                     <div className={styles.circle_container}>
                         <div className={styles.circle}>
+                            <div className={styles.hover_content}>
+                                <div className={styles.hover_circle} />
+                                <HiUserGroup className={styles.group_icon} />
+                            </div>
                             <SimpleTitle textColor={'white'}>+20</SimpleTitle>
                             <p>membros</p>
                         </div>
