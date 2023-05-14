@@ -1,6 +1,6 @@
 import styles from './services.module.css';
-import websiteServiceImage from '@public/website-service.png';
-import consultancyServiceImage from '@public/consultancy-service.png';
+import websiteServiceImage from '@public/images/website-service.png';
+import consultancyServiceImage from '@public/images/consultancy-service.png';
 
 import Image from 'next/image';
 
