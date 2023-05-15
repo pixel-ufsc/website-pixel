@@ -30,6 +30,14 @@ Toda vez que um conteúdo é alterado no Sanity Studio, será feita uma chamada 
 
 É importante notar que dependendo do tipo de alteração e do tamanho do website, a build pode demorar alguns minutos para ser concluída. Portanto, é importante ter em mente que as alterações realizadas no Sanity Studio podem demorar alguns minutos para serem refletidas no site.
 
+### Como enviar alterações para o Sanity Studio
+
+Quando uma alteração for feita no Sanity Studio (seja a mudança de um schema, criação de um novo schema, etc.), é necessário realizar o _redeploy_ do Sanity Studio. Para isso, basta executar os seguintes comandos no terminal:
+
+1. Abra o terminal na pasta raiz do projeto.
+2. Execute `cd sanity-backend` para acessar a pasta do diretório referente ao Sanity Studio.
+3. Execute `npx sanity deploy` ou `sanity deploy` (caso você tenha o Sanity CLI instalado globalmente) para realizar o _redeploy_ do Sanity Studio.
+
 # Referências
 
 - [Sanity CMS](https://www.sanity.io)
