@@ -14,13 +14,13 @@
     /* RGB Color */
     --color-purple-rgb: 130, 51, 126;
     --color-pink-rgb: 243, 218, 241;
-    --color-blue-rgb: rgb(2, 48, 71);
-    --color-yellow-rgb: rgb(252, 191, 73);
-    --color-orange-rgb: rgb(249, 130, 34);
-    --color-white-rgb: rgb(255, 255, 255);
-    --color-whatsapp-rgb: rgb(37, 211, 102);
-    --color-black-gray-rgb: rgb(68, 68, 68);
-    --color-light-blue-rgb: rgb(22, 145, 170);
+    --color-blue-rgb: 2, 48, 71;
+    --color-yellow-rgb: 252, 191, 73;
+    --color-orange-rgb: 249, 130, 34;
+    --color-white-rgb: 255, 255, 255;
+    --color-whatsapp-rgb: 37, 211, 102;
+    --color-black-gray-rgb: 68, 68, 68;
+    --color-light-blue-rgb: 22, 145, 170;
 
     /* Gradients */
     --gradient-purple: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);

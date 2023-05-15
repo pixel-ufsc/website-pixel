@@ -1,3 +1,9 @@
+.link_wrapper {
+    user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
+}
+
 .container {
     width: 400px;
     max-width: 80vw;
@@ -42,14 +48,28 @@
     gap: 10px;
 }
 
-.title_wrapper > h3 {
+.title_wrapper a {
+    width: fit-content;
+}
+
+.title_wrapper h3 {
     font-family: 'Krub';
     font-style: normal;
     font-weight: 400;
     font-size: calc(20rem / 16);
     line-height: 1.15;
-
     color: var(--color-blue);
+
+    text-decoration: underline;
+    text-decoration-color: rgba(var(--color-blue-rgb), 0);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: text-decoration-color 0.15s ease;
+}
+
+.title_wrapper a:hover h3 {
+    text-decoration-color: rgba(var(--color-blue-rgb), 1);
 }
 
 .tags_container {
