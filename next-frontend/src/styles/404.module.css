@@ -1,112 +1,135 @@
-.contentWrapper {
-    min-height: 80vh;
-    padding: 7% 9% 0;
-
-    background-image: url('./../../public//pixel-white-svg.svg');
-    background-position: right;
-    background-position-y: -40px;
-    background-repeat: no-repeat;
-    background-size: contain;
+.container {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    padding: 0 10%;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-}
-
-.textContainer {
-    width: 60%;
-}
-
-.textContainer > span {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 4rem;
+    gap: 6vw;
+}
+
+.text_container {
+    font-family: 'Krub', sans-serif;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text_container p {
+    font-size: calc(16rem / 16);
+    line-height: 1.75;
+    color: #023047;
+
+    white-space: pre-line;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.text_container a {
+    font-weight: 400;
+    font-size: calc(16rem / 16);
+    line-height: 1.5;
+
+    color: #3e7fd0;
+
+    text-decoration: underline;
+    text-decoration-color: #3292ff00;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+
+    transition: text-decoration-color 0.1s ease;
+}
+
+.text_container a:hover {
+    text-decoration-color: #3e7fd0;
+}
+
+.text_container .title {
+    text-align: left;
+}
+
+.text_container .tag {
+    width: fit-content;
+    height: fit-content;
+
+    font-weight: 400;
+    font-size: calc(16rem / 16);
+    line-height: 1.25;
+
+    color: #c57857;
 
     background-color: #ffede8;
-    padding: 0.25rem 1rem;
-    border-radius: 29px;
-
-    font-size: 1rem;
-    line-height: 1.25;
-    font-weight: 400;
-    color: #c57857;
+    padding: 2px 16px;
+    border-radius: 20px;
 }
 
-.textContainer > h1 {
-    margin: 1rem 0 2rem;
-
+.gradient_wrapper h1 {
     font-family: 'KoHo', sans-serif;
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 1.15;
-    color: var(--color-blue);
-    letter-spacing: 1px;
-}
-
-.textContainer > p {
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75;
-    letter-spacing: 0.16px;
-    color: var(--color-blue);
-}
-
-.textContainer > p > a {
-    text-decoration: underline var(--color-blue) solid 1.5px;
-    text-underline-offset: 1.5px;
-}
-
-.custom404 {
-    font-family: 'KoHo', sans-serif;
-    font-weight: 700;
-    font-size: 13rem;
+    font-size: calc(20px + 15vh);
     line-height: 1;
-    text-align: center;
-    letter-spacing: 0.4px;
 
-    background-image: linear-gradient(91.76deg, #e7b537 29.68%, #b145aa 99.28%);
-    color: transparent;
+    background: linear-gradient(91.76deg, #e7b537 29.68%, #b145aa 99.28%);
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
-@media screen and (max-width: 64rem) {
-    .contentWrapper {
-        flex-direction: column;
-        align-items: center;
+.icon_wrapper {
+    pointer-events: none;
+
+    height: 80%;
+    width: auto;
+    aspect-ratio: 1;
+
+    position: absolute;
+    top: 52%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#pixel_icon {
+    height: 100%;
+    width: 100%;
+
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 877 877" viewBox="0 0 877 877"><path d="M474.7 4h392.5c3.5 0 6.8.7 9.7 2V1.7c-3-1.1-6.2-1.7-9.7-1.7H474.7c-23.3 0-36.2 26.8-21.7 45l196.3 244.1a27.82 27.82 0 0 0 43.3 0L877 59.8v-6.4L689.5 286.6a23.87 23.87 0 0 1-37.1 0L456.2 42.5C443.7 27 454.8 4 474.7 4zm177.8 586.4c4.8-5.9 11.6-8.9 18.5-8.9s13.8 3 18.5 8.9L877 823.6v-6.4L692.7 587.9a27.82 27.82 0 0 0-43.3 0L453.1 832c-14.6 18.1-1.6 45 21.7 45h392.5c3.5 0 6.8-.6 9.7-1.7V871c-2.9 1.3-6.2 2-9.7 2H474.7c-14.1 0-23.8-11.5-23.8-23.8 0-5 1.6-10.2 5.3-14.7l196.3-244.1zm114-157.1L877 242.6v-8L763 431.3c-2.6 4.4-2.6 9.9 0 14.4l114 196.6v-8L766.5 443.6c-1.9-3.1-1.9-7.1 0-10.3zm-187.5-2L385.4 97.4c-5.5-9.5-19.4-9.5-25 0L166.9 431.3c-2.6 4.4-2.6 9.9 0 14.4l193.5 333.9c5.6 9.5 19.4 9.5 25 0L579 445.7c2.6-4.5 2.6-10 0-14.4zm-3.5 12.3L382 777.6c-2 3.4-5.5 5.2-9 5.2s-7-1.7-9-5.2l-193.5-334c-1.9-3.2-1.9-7.1 0-10.3L364 99.3c4-6.9 14-6.9 18 0l193.5 334c1.9 3.2 1.9 7.2 0 10.3z" style="fill-rule:evenodd;clip-rule:evenodd"/></svg>')
+        center/contain;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 877 877" viewBox="0 0 877 877"><path d="M474.7 4h392.5c3.5 0 6.8.7 9.7 2V1.7c-3-1.1-6.2-1.7-9.7-1.7H474.7c-23.3 0-36.2 26.8-21.7 45l196.3 244.1a27.82 27.82 0 0 0 43.3 0L877 59.8v-6.4L689.5 286.6a23.87 23.87 0 0 1-37.1 0L456.2 42.5C443.7 27 454.8 4 474.7 4zm177.8 586.4c4.8-5.9 11.6-8.9 18.5-8.9s13.8 3 18.5 8.9L877 823.6v-6.4L692.7 587.9a27.82 27.82 0 0 0-43.3 0L453.1 832c-14.6 18.1-1.6 45 21.7 45h392.5c3.5 0 6.8-.6 9.7-1.7V871c-2.9 1.3-6.2 2-9.7 2H474.7c-14.1 0-23.8-11.5-23.8-23.8 0-5 1.6-10.2 5.3-14.7l196.3-244.1zm114-157.1L877 242.6v-8L763 431.3c-2.6 4.4-2.6 9.9 0 14.4l114 196.6v-8L766.5 443.6c-1.9-3.1-1.9-7.1 0-10.3zm-187.5-2L385.4 97.4c-5.5-9.5-19.4-9.5-25 0L166.9 431.3c-2.6 4.4-2.6 9.9 0 14.4l193.5 333.9c5.6 9.5 19.4 9.5 25 0L579 445.7c2.6-4.5 2.6-10 0-14.4zm-3.5 12.3L382 777.6c-2 3.4-5.5 5.2-9 5.2s-7-1.7-9-5.2l-193.5-334c-1.9-3.2-1.9-7.1 0-10.3L364 99.3c4-6.9 14-6.9 18 0l193.5 334c1.9 3.2 1.9 7.2 0 10.3z" style="fill-rule:evenodd;clip-rule:evenodd"/></svg>')
+        center/contain;
+
+    background: linear-gradient(
+        300deg,
+        rgba(0, 0, 0, 0.32) 30%,
+        rgba(0, 0, 0, 0.05) 45%,
+        rgba(0, 0, 0, 0.05) 45%,
+        rgba(0, 0, 0, 0.32) 70%
+    );
+    opacity: 0.2;
+    background-size: 400% 100%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@media (max-width: 50rem) {
+    .container {
+        padding: 0 5%;
+        flex-direction: column-reverse;
         justify-content: center;
-        gap: 3rem;
-    }
-
-    .textContainer {
-        width: 85%;
-    }
-
-    .custom404 {
-        margin-bottom: 3rem;
-    }
-}
-
-@media screen and (max-width: 48rem) {
-    .textContainer {
-        width: 100%;
-    }
-
-    .textContainer > h1 {
-        font-size: 3.5rem;
-    }
-
-    .textContainer > p {
-        font-size: 1.15rem;
-    }
-
-    .custom404 {
-        font-size: 10rem;
-    }
-}
-
-@media screen and (max-width: 27rem) {
-    .custom404 {
-        font-size: 6rem;
+        gap: 6vh;
     }
 }
