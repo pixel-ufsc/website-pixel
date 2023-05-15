@@ -1,7 +1,7 @@
 const information = {
   name: 'information',
   type: 'document',
-  title: 'Information',
+  title: 'Informações',
   groups: [
     {
       title: 'Social Media',
@@ -59,6 +59,14 @@ const information = {
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {},
+    prepare: () => ({
+      title: 'Informações gerais do site',
+      subtitle:
+        'As configurações que podem ser modificadas aqui são utilizadas pelo site de forma global.',
+    }),
+  },
 }
 
 export default information

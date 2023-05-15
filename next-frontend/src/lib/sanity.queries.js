@@ -49,3 +49,17 @@ export const allProjectsPreviewQuery = groq`
 		}
 	}
 `;
+
+export const usefullLinksQuery = groq`
+	*[_type == "linksPage"] {
+		_createdAt, _id, _rev, _type, _updatedAt,
+		"data": {
+			links[] {
+				title,
+				url,
+				highlight,
+				open_in_new_tab,
+			}
+		}
+	}
+`;
