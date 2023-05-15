@@ -1,7 +1,13 @@
 import { createClient } from 'next-sanity';
 import { clientConfig } from './sanity.api';
 // Queries
-import { allDirectorsQuery, allMembersQuery, allProjectsPreviewQuery, allSocialInfoQuery } from './sanity.queries';
+import {
+    allDirectorsQuery,
+    allMembersQuery,
+    allProjectsPreviewQuery,
+    allSocialInfoQuery,
+    usefullLinksQuery,
+} from './sanity.queries';
 
 export const sanityClient = createClient(clientConfig);
 
@@ -19,4 +25,8 @@ export async function getAllSocialInfo() {
 
 export async function getAllProjectsPreview() {
     return await sanityClient.fetch(allProjectsPreviewQuery);
+}
+
+export async function getLinksPageData() {
+    return await sanityClient.fetch(usefullLinksQuery);
 }

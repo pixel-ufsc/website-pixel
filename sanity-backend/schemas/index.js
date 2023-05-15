@@ -1,6 +1,7 @@
 import member from './documents/member'
 import project from './documents/projects'
 import information from './singletons/information'
+import linksPage from './singletons/links-page'
 
 // Schemas created in the 'documents' or 'singletons' folders have to be exposed here
 // so that they are exported to the studio.
@@ -16,4 +17,5 @@ export const schemaTypes = [
 
   // Singleton schemas
   information,
+  linksPage,
 ]

@@ -1,6 +1,6 @@
-import {RiArchiveLine, RiSettings5Line, RiInformationLine} from 'react-icons/ri'
-import {BsFilePersonFill} from 'react-icons/bs'
-import {BsFillClipboardCheckFill} from 'react-icons/bs'
+import {RiInformationLine} from 'react-icons/ri'
+import {BsFilePersonFill, BsFillClipboardCheckFill} from 'react-icons/bs'
+import {BiLink} from 'react-icons/bi'
 
 export const deskStructure = (S) =>
   S.list()
@@ -16,12 +16,11 @@ export const deskStructure = (S) =>
         .child(S.documentTypeList('project').title('Portfólio de projetos')),
       S.divider(),
       S.listItem()
+        .title('Links úteis')
+        .icon(BiLink)
+        .child(S.editor().schemaType('linksPage').documentId('links_page')),
+      S.listItem()
         .title('Information')
         .icon(RiInformationLine)
         .child(S.editor().schemaType('information').documentId('information')),
-      /* S.listItem()
-        .title('Settings')
-        .icon(RiSettings5Line)
-        .child(S.editor().schemaType('site_settings').documentId('site_settings')), */
-      //...S.documentTypeListItems(),
     ])

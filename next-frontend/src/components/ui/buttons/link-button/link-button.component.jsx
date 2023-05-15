@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import styles from './link-button.module.css';
 
-export default function LinkButton({ texto, link }) {
+export default function LinkButton({ title, url, ...props }) {
     return (
-        <Link href={link} className={styles.link_button}>
-            <span className={styles.link_button_text}>{texto}</span>
+        <Link href={url} className={styles.link_button} {...props}>
+            <span className={styles.link_button_text}>{title}</span>
         </Link>
     );
 }
-
