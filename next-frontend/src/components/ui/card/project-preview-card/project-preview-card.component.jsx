@@ -12,6 +12,7 @@ export default function ProjectPreviewCard({ title, tags, imageSrc, href, ...pro
                     {imageSrc && (
                         <Image
                             fill
+                            sizes="(max-width: 400px) 80vw, 400px"
                             src={imageSrc}
                             alt={'Imagem de pré visualização do projeto ' + title}
                             quality={90}
