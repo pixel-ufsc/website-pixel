@@ -10,8 +10,6 @@ import SimpleTitle from '@components/ui/title/simple-title/simple-title.componen
 import SliderCarousel from '@components/ui/slider-carousel/slider-carousel.component';
 
 export default function PortfolioPreview({ projectsPreview }) {
-    console.log(projectsPreview);
-
     return (
         <section className={styles.container}>
             <div className={styles.title_container}>
