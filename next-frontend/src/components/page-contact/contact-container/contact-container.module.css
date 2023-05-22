@@ -17,7 +17,7 @@
 }
 
 .title {
-    margin-bottom: 32px;
+    margin-bottom: var(--title-bottom-gap);
 }
 
 @media (max-width: 37.5rem) {

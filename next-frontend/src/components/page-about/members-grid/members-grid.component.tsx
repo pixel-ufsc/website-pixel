@@ -7,10 +7,15 @@ import { useNextSanityImage } from 'next-sanity-image';
 import { sanityClient } from '@lib/sanity.client';
 // Components
 import MemberCard from '@components/ui/card/member-card/member-card.component';
+import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 
 export default function MembersGrid({ members }: { members: Member[] }) {
     return (
         <div className={styles.container}>
+            <SimpleTitle textColor={'purple-gradient'} className={styles.title}>
+                Nossos membros
+            </SimpleTitle>
+
             <div className={styles.grid_wrapper}>
                 {members?.map((member) => {
                     const imageProps = useNextSanityImage(sanityClient, member.data.image);
