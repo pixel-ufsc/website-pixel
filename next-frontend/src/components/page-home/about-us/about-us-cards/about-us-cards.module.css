@@ -9,50 +9,6 @@
     cursor: pointer;
 }
 
-.text_card {
-    padding: 24px;
-    font-family: 'Krub', sans-serif;
-}
-
-.text_card h2 {
-    font-size: calc(60rem / 16);
-    font-weight: 700;
-    line-height: 1.2;
-
-    background: linear-gradient(90deg, #a656a2 6.77%, #0e222d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.text_card h3 {
-    margin-right: 1vw;
-
-    font-size: calc(20rem / 16);
-    font-weight: 600;
-    line-height: 1.2;
-
-    background: var(--gradient-purple);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.text_card p {
-    margin-top: 14px;
-
-    font-size: calc(14rem / 16);
-    line-height: 1.5;
-    font-weight: normal;
-    color: var(--color-blue);
-
-    white-space: pre-line;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-}
-
 .logo_card {
     padding: 24px;
     display: flex;
@@ -130,17 +86,6 @@
 
 @media (max-width: 87.5rem) {
     /* 87.5rem = 1400px */
-    .text_card h2 {
-        font-size: calc(50rem / 16);
-    }
-    .text_card h3 {
-        margin-right: 0;
-        font-size: calc(20rem / 16);
-    }
-    .text_card p {
-        font-size: calc(12rem / 16);
-    }
-
     .logo_card .pixel_logo {
         max-width: 170px;
     }
