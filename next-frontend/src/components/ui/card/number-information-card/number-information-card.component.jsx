@@ -14,7 +14,7 @@ export default function NumberInformationCard({ title, subtitle, description, cl
 }
 
 NumberInformationCard.propTypes = {
-    title: P.string.isRequired,
+    title: P.oneOfType([P.string, P.number]).isRequired,
     subtitle: P.string.isRequired,
     description: P.string.isRequired,
     className: P.string,
