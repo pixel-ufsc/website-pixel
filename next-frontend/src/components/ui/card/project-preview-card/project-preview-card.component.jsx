@@ -4,6 +4,9 @@ import Link from 'next/link';
 // Components
 import CardFrame from '../card-frame/card-frame.component';
 
+// This component is used to preview a project in the home page. It is a smaller verion
+// of the ProjectCard component that is used on the portfolio page.
+
 export default function ProjectPreviewCard({ title, tags, imageSrc, href, ...props }) {
     return (
         <CardFrame className={styles.container} {...props}>

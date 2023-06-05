@@ -17,7 +17,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--title-bottom-gap);
 }
 
 .text_container p {

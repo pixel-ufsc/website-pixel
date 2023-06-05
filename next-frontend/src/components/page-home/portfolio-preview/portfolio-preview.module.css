@@ -18,7 +18,7 @@
     align-items: center;
     text-align: center;
 
-    gap: 20px;
+    gap: var(--title-bottom-gap);
 }
 
 .title_container p {

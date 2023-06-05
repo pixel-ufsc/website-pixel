@@ -1,6 +1,7 @@
 import styles from './about-us-cards.module.css';
 // Components
 import CardFrame from '@components/ui/card/card-frame/card-frame.component';
+import NumberInformationCard from '@components/ui/card/number-information-card/number-information-card.component';
 // Assets
 import PixelLogoHorizontal from '@public/svgs/pixel/pixel-logo-horizontal';
 
@@ -16,21 +17,24 @@ export default function AboutUsCards() {
 
     return (
         <div className={styles.stats}>
-            <CardFrame className={`${styles.card} ${styles.text_card}`}>
-                <h2>+50</h2>
-                <h3>projetos&nbsp;realizados</h3>
-                <p>Mais de 50 projetos dos mais variados tipos já realizados</p>
-            </CardFrame>
-            <CardFrame className={`${styles.card} ${styles.text_card}`}>
-                <h2>9.5</h2>
-                <h3>net&nbsp;promoter&nbsp;score</h3>
-                <p>Nossos clientes aprovam nossos serviços</p>
-            </CardFrame>
-            <CardFrame className={`${styles.card} ${styles.text_card}`}>
-                <h2>{getYearsOfExistence()}</h2>
-                <h3>anos&nbsp;de&nbsp;sucesso</h3>
-                <p>Desde 2013 oferecendo serviços de alta qualidade</p>
-            </CardFrame>
+            <NumberInformationCard
+                title={'+50'}
+                subtitle={'projetos\u00A0realizados'} // \u00A0 is a non-breaking space
+                description={'Mais de 50 projetos dos mais variados tipos já realizados'}
+                className={styles.card}
+            />
+            <NumberInformationCard
+                title={'9.5'}
+                subtitle={'net\u00A0promoter\u00A0score'} // \u00A0 is a non-breaking space
+                description={'Nossos clientes aprovam nossos serviços'}
+                className={styles.card}
+            />
+            <NumberInformationCard
+                title={getYearsOfExistence()}
+                subtitle={'anos\u00A0de\u00A0sucesso'} // \u00A0 is a non-breaking space
+                description={'Desde 2013 oferecendo serviços de alta qualidade'}
+                className={styles.card}
+            />
             <CardFrame className={`${styles.card} ${styles.logo_card}`}>
                 <PixelLogoHorizontal className={styles.pixel_logo} />
             </CardFrame>

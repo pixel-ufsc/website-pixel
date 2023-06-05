@@ -24,6 +24,9 @@
 
     /* Gradients */
     --gradient-purple: linear-gradient(150deg, var(--color-purple) 0%, var(--color-blue) 100%);
+
+    /* Gaps, margins and paddings */
+    --title-bottom-gap: 16px;
 }
 
 * {
