@@ -7,11 +7,13 @@ export default function ContactForm() {
         <form
             className={styles.form}
             name="Form - Contact Page"
-            action="contato/submission?success=true"
+            action="https://api.web3forms.com/submit"
             method="POST"
-            data-netlify="true"
             onSubmit={() => console.log('Form submitted!')}
         >
+            <input type="hidden" name="apikey" value="66b36fb4-ce07-4991-b4aa-98f82da8a90b" />
+            <input type="hidden" name="Nova submissão de formulário - Site da Pixel" value="Mission Control"></input>
+
             <div className={styles.form_element}>
                 <label className={styles.label} htmlFor="name">
                     Nome completo
