@@ -1,40 +1,31 @@
 import styles from './services.module.css';
-import websiteServiceImage from '@public/images/website-service.png';
-import consultancyServiceImage from '@public/images/consultancy-service.png';
-
 import Image from 'next/image';
+// Components
+import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
+import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
+// Assets
 
 export default function Services() {
     return (
-        <section className={styles.servicesContainer}>
-            <h2>Serviços</h2>
-            <div>
-                <div className={styles.serviceCard}>
-                    <Image
-                        src={websiteServiceImage}
-                        width={106}
-                        height={86}
-                        alt="Página web em um navegador tendo como conteúdo a sintaxe de um elemento HTML."
-                    />
-                    <h3>Desenvolvimento de sites</h3>
-                    <p>
-                        Desenvolvimento de sistemas web e sites baseados nas mais novas tecnologias, com a preocupação
-                        de adaptar ao ambiente mobile.
-                    </p>
-                </div>
-                <div className={styles.serviceCard}>
-                    <Image
-                        src={consultancyServiceImage}
-                        width={91}
-                        height={92}
-                        alt="Pessoa com um headset, ao lado de uma ilustração com uma engrenagem e uma chave fixa, representando o serviço de consultoria."
-                    />
-                    <h3>Consultoria</h3>
-                    <p>
-                        Para quem possui um site ou sistema e precisa de ajuda. Ou para quem está a procura de uma
-                        solução ideal. Nós te ajudamos em qualquer situação!
-                    </p>
-                </div>
+        <section className={styles.container}>
+            <div className={styles.description}>
+                <SimpleTitle textColor={'purple-gradient'} className={styles.title}>
+                    Nossos serviços
+                </SimpleTitle>
+                <p className={styles.primary}>
+                    Atuamos no desenvolvimento de sites com foco em usabilidade, performance e conversão.
+                </p>
+                <p className={styles.secondary}>
+                    Desenvolvemos sites personalizados e responsivos, combinando as mais recentes tecnologias para
+                    oferecer uma experiência única em todos os dispositivos. Conte conosco para consolidar sua
+                    identidade visual, gerar reconhecimento de marca e melhorar o envolvimento com seu público-alvo.
+                </p>
+                <HoverableButton href={'/servicos'} arrowed={true} label={'Saiba mais sobre os nossos serviços'} />
+            </div>
+
+            <div className={styles.mockup}>
+                <Image className={styles.computer_image} fill src={'/images/macbook-with-shadow.png'} />
+                <div className={styles.site_image_container}></div>
             </div>
         </section>
     );

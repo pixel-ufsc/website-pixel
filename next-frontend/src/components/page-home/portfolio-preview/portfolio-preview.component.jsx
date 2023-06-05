@@ -13,7 +13,7 @@ export default function PortfolioPreview({ projectsPreview }) {
     return (
         <section className={styles.container}>
             <div className={styles.title_container}>
-                <SimpleTitle textColor={'purple-gradient'}>Nosso portfólio</SimpleTitle>
+                <SimpleTitle textColor={'purple-gradient'}>Portfólio</SimpleTitle>
                 <p>
                     Esses são alguns dos projetos que nós já realizamos. Descubra em mais detalhes os{' '}
                     <Link href={'/portfolio'}>nossos projetos</Link>.
