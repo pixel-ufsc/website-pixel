@@ -44,6 +44,7 @@ export const allProjectsPreviewQuery = groq`
 		"data": {
 			name,
 			slug,
+			url,
 			preview_image,
 			tags,
 		}
