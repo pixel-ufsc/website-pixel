@@ -25,9 +25,23 @@ export default function Services() {
             </div>
 
             <div className={styles.mockup}>
-                <Image className={styles.computer_image} fill src={'/images/macbook-with-shadow.png'} />
+                <Image
+                    className={styles.computer_image}
+                    fill
+                    src={'/images/macbook-with-shadow.png'}
+                    sizes="35vw"
+                    priority
+                    quality={80}
+                />
                 <div className={styles.site_image_container}>
-                    <Image fill className={styles.site_image} src={'/images/banner.png'} />
+                    <Image
+                        fill
+                        className={styles.site_image}
+                        src={'/images/banner.png'}
+                        sizes="35vw"
+                        priority
+                        quality={80}
+                    />
                 </div>
             </div>
         </section>
