@@ -16,6 +16,18 @@ const project = {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'url',
+      type: 'string',
+      title: 'URL do projeto',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'description',
+      type: 'string',
+      title: 'Descrição do projeto',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'preview_image',
       type: 'image',
       title: 'Imagem de pré-visualização',
