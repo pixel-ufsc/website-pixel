@@ -17,7 +17,7 @@ const project = {
     },
     {
       name: 'url',
-      type: 'string',
+      type: 'url',
       title: 'URL do projeto',
       validation: (Rule) => Rule.required(),
     },
