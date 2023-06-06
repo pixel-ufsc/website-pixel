@@ -24,7 +24,8 @@ export default function ProjectPreviewCard({ title, tags, imageSrc, href, ...pro
             </div>
 
             <div className={styles.title_wrapper}>
-                <Link href={href ? href : '/portfolio'}>
+                {/* REMEMBER -> REMOVE TARGET ATRIBUTE FOR LINK */}
+                <Link href={href ? href : '/portfolio'} target="_blank">
                     <h3>{title}</h3>
                 </Link>
                 {tags && tags.length > 0 && (

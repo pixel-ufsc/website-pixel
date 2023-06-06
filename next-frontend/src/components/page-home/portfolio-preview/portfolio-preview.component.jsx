@@ -29,7 +29,8 @@ export default function PortfolioPreview({ projectsPreview }) {
                             title={project?.data?.name}
                             tags={project?.data?.tags}
                             imageSrc={imageProps?.src}
-                            href={`/portfolio/${project?.data?.slug?.current}`}
+                            // href={`/portfolio/${project?.data?.slug?.current}`} REMEMBER -> change href to this url
+                            href={project?.data?.url}
                         />
                     );
                 })}
