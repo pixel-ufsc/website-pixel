@@ -3,13 +3,16 @@ import Link from 'next/link';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
+import SpanTag from '@components/ui/tag/span-tag/span-tag.component';
 
 export default function Custom404() {
     return (
         <PageContainer hasWhatsappButton={false}>
             <div className={styles.container}>
                 <div className={styles.text_container}>
-                    <span className={styles.tag_error}>Erro</span>
+                    <SpanTag textColor={'#c57857'} backgroundColor={'#ffede8'}>
+                        Erro
+                    </SpanTag>
                     <SimpleTitle className={styles.title} textColor={'purple-gradient'}>
                         Ops, parece que essa página não existe...
                     </SimpleTitle>

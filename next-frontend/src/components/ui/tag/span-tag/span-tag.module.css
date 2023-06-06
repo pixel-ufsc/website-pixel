@@ -1,0 +1,12 @@
+.tag {
+    width: fit-content;
+    height: fit-content;
+
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: calc(16rem / 16);
+    line-height: 1.25;
+
+    padding: 2px 16px;
+    border-radius: 20px;
+}

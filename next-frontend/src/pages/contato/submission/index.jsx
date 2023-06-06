@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
+import SpanTag from '@components/ui/tag/span-tag/span-tag.component';
 
 export default function Submission() {
     const router = useRouter();
@@ -14,7 +15,9 @@ export default function Submission() {
         <PageContainer hasWhatsappButton={false}>
             <div className={styles.container}>
                 <div className={styles.text_container}>
-                    <span className={styles.tag_success}>Sucesso</span>
+                    <SpanTag textColor={'#4a9c5b'} backgroundColor={'#e8f8e8'}>
+                        Sucesso
+                    </SpanTag>
                     <SimpleTitle className={styles.title} textColor={'purple-gradient'}>
                         Seu formulário foi enviado com sucesso!
                     </SimpleTitle>
@@ -33,7 +36,9 @@ export default function Submission() {
         <PageContainer hasWhatsappButton={false}>
             <div className={styles.container}>
                 <div className={styles.text_container}>
-                    <span className={styles.tag_error}>Erro</span>
+                    <SpanTag textColor={'#c57857'} backgroundColor={'#ffede8'}>
+                        Erro
+                    </SpanTag>
                     <SimpleTitle className={styles.title} textColor={'purple-gradient'}>
                         Ocorreu um erro no envio do seu formulário!
                     </SimpleTitle>
