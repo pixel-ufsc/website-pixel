@@ -32,6 +32,6 @@
 @media screen and (max-width: 500px) {
     .grid_wrapper {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
+        grid-gap: 16px;
     }
 }

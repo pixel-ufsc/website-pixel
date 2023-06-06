@@ -1,22 +1,10 @@
 .container {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
-    padding: 40px 10%;
-}
-
-.text_container {
     display: flex;
     flex-direction: column;
     gap: var(--title-bottom-gap);
 }
 
-.text_container p {
+.container p {
     font-family: 'Krub', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -29,18 +17,10 @@
     hyphens: auto;
 }
 
-.text_container br {
+.container br {
     content: '';
     margin: 1rem;
     display: block;
-}
-
-.about_text_container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5%;
 }
 
 .container a {
@@ -62,13 +42,4 @@
 
 .container a:hover {
     text-decoration-color: #3e7fd0;
-}
-
-.card_container {
-    width: min-content;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 16px;
 }

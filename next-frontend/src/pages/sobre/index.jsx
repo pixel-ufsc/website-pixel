@@ -3,13 +3,20 @@ import PageContainer from '@components/layout/page-container/page-container.comp
 import MembersGrid from '@components/page-about/members-grid/members-grid.component';
 // Lib
 import { getAllMembers } from '@lib/sanity.client';
-import AboutInformationSection from '@components/page-about/about-information-section/about-information-section.component';
+import SectionDivider from '@components/ui/section-divider/section-divider.component';
+import AboutPixel from '@components/page-about/about-pixel/about-pixel.component';
+import AboutEJ from '@components/page-about/about-ej/about-ej.component';
 
 export default function Sobre({ membersData }) {
     return (
         <PageContainer>
-            <AboutInformationSection />
+            <SectionDivider.pageBorder />
+            <AboutPixel />
+            <SectionDivider />
+            <AboutEJ />
+            <SectionDivider />
             <MembersGrid members={membersData} />
+            <SectionDivider.pageBorder />
         </PageContainer>
     );
 }

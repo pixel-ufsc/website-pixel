@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.page_border {
+    margin-top: 3rem;
+}
+
 @media (min-width: 62.5rem) {
     /* 62.5rem = 1000px */
     .divider {
