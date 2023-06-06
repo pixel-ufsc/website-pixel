@@ -1,19 +1,73 @@
 import styles from './contact-form.module.css';
+import Link from 'next/link';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 // Components
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
 export default function ContactForm() {
-    return (
-        <form
-            className={styles.form}
-            name="Form - Contact Page"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            onSubmit={() => console.log('Form submitted!')}
-        >
-            <input type="hidden" name="apikey" value="66b36fb4-ce07-4991-b4aa-98f82da8a90b" />
-            <input type="hidden" name="Nova submissão de formulário - Site da Pixel" value="Mission Control"></input>
+    const router = useRouter();
+    const [formError, setFormError] = useState('');
 
+    async function handleSubmit(e) {
+        e.preventDefault();
+
+        // Form validation
+        const form = e.target;
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const textMessage = formData.get('text-message');
+
+        if (!name || !email || !phone || !textMessage) {
+            setFormError('Por favor, preencha todos os campos');
+            return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setFormError('Por favor, informe um endereço de e-mail válido');
+            return;
+        }
+
+        // Phone validation
+        const phoneRegex = /^\d{10,11}$/; // Considerando números brasileiros de 10 a 11 dígitos
+        if (!phoneRegex.test(phone)) {
+            setFormError('Por favor, informe um número de telefone válido');
+            return;
+        }
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+            body: JSON.stringify({
+                access_key: '66b36fb4-ce07-4991-b4aa-98f82da8a90b',
+                subject: 'Nova submissão de formulário - Pixel',
+                from_name: 'Site da Pixel',
+                name,
+                email,
+                phone,
+                'text-message': textMessage,
+            }),
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            router.replace('/contato/submission?success=true');
+        } else {
+            alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+            console.error(result);
+            router.replace('/contato/submission?success=false');
+        }
+    }
+
+    return (
+        <form className={styles.form} name="Form - Contact Page" onSubmit={handleSubmit}>
             <div className={styles.form_element}>
                 <label className={styles.label} htmlFor="name">
                     Nome completo
@@ -40,8 +94,16 @@ export default function ContactForm() {
                     Mensagem
                 </label>
                 <textarea className={styles.textarea} placeholder="Escreva aqui mensagem..." name="text-message" />
+                <label className={styles.checkbox_label}>
+                    Ao prosseguir, você concorda com nossos os nossos <Link href={'/portfolio'}>termos de uso</Link> e{' '}
+                    <Link href={'/portfolio'}>política de privacidade</Link>.
+                </label>
             </div>
-            <HoverableButton label="Enviar mensagem" type="submit" arrowed={true} id={styles.submit_button} />
+
+            <div className={styles.send_container}>
+                <label className={styles.error_label}>{formError}</label>
+                <HoverableButton label="Enviar mensagem" type="submit" arrowed={true} id={styles.submit_button} />
+            </div>
         </form>
     );
 }

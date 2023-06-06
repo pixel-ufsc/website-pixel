@@ -9,7 +9,7 @@ export default function Custom404() {
         <PageContainer hasWhatsappButton={false}>
             <div className={styles.container}>
                 <div className={styles.text_container}>
-                    <span className={styles.tag}>Erro</span>
+                    <span className={styles.tag_error}>Erro</span>
                     <SimpleTitle className={styles.title} textColor={'purple-gradient'}>
                         Ops, parece que essa página não existe...
                     </SimpleTitle>

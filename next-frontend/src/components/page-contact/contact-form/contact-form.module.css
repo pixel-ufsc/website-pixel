@@ -24,6 +24,36 @@
     font-weight: 600;
 }
 
+.checkbox_label {
+    font-family: 'Krub', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16rem / 16);
+    line-height: 150%;
+
+    color: #023047;
+}
+.checkbox_label > a {
+    font-family: 'Krub', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16rem / 16);
+    line-height: 150%;
+
+    color: #3e7fd0;
+
+    text-decoration: underline;
+    text-decoration-color: #3292ff00;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+
+    transition: text-decoration-color 0.1s ease;
+}
+
+.checkbox_label > a:hover {
+    text-decoration-color: #3e7fd0;
+}
+
 .input,
 .textarea {
     width: 100%;
@@ -86,6 +116,21 @@
 #submit_button {
     width: 200px !important;
     border-radius: 10px !important;
+}
+
+.send_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.error_label {
+    color: #c57857;
+    font-size: calc(14rem / 16);
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 @media (max-width: 37.5rem) {
