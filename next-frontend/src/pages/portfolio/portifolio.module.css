@@ -1,0 +1,47 @@
+.contentWrapper {
+    width: 100%;
+    padding: 7.5rem 2.5%;
+}
+
+.title {
+    margin-bottom: 7.5rem;
+
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.15;
+    color: var(--color-blue);
+
+    white-space: pre-line;
+    text-align: center;
+}
+
+.title .gradient {
+    color: black;
+    background: linear-gradient(150deg, #d8965c 29.68%, #b5519f 99.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 42.5rem) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .title {
+        font-size: 2rem;
+    }
+}
