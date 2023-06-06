@@ -8,7 +8,6 @@ import { getLinksPageData } from '@lib/sanity.client';
 
 export default function LinksUteis({ linksData }) {
     const links = linksData[0]?.data?.links ? linksData[0]?.data?.links : [];
-    console.log(links);
 
     return (
         <PageContainer hasHeader={false} hasFooter={false}>

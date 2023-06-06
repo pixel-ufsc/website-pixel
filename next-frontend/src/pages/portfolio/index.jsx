@@ -7,8 +7,6 @@ import { getAllProjects, sanityClient } from '@lib/sanity.client';
 import { useNextSanityImage } from 'next-sanity-image';
 
 export default function Portfolio({ projectsData }) {
-    console.log(projectsData);
-
     return (
         <PageContainer>
             <div className={styles.contentWrapper}>
