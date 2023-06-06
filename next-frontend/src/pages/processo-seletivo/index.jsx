@@ -1,15 +1,12 @@
 import styles from './processo-seletivo.module.css';
 import Image from 'next/image';
-import aboutUsImage from '@public/images/about-us.png';
-
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
-import HighlightedTitle from '@components/ui/title/highlighted-title/highlighted-title.component';
 
 export default function ProcessoSeletivo() {
     return (
         <PageContainer>
-            <section className={styles.processoSeletivo}>
+            {/* <section className={styles.processoSeletivo}>
                 <div>
                     <HighlightedTitle>Processo Seletivo</HighlightedTitle>
                     <p>
@@ -31,7 +28,7 @@ export default function ProcessoSeletivo() {
             </section>
             <a href="https://app.pipefy.com/public/form/jWOO-A1H" target="_blank" className={styles.subscribeBtn}>
                 Inscreva-se
-            </a>
+            </a> */}
         </PageContainer>
     );
 }
