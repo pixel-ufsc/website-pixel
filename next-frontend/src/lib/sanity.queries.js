@@ -50,6 +50,20 @@ export const allProjectsPreviewQuery = groq`
 	}
 `;
 
+export const allProjectsQuery = groq`
+	*[_type == "project"] | order(_createdAt desc) {
+		_createdAt, _id, _rev, _type, _updatedAt,
+		"data": {
+			name,
+			slug,
+			url,
+			description,
+			preview_image,
+			tags,
+		}
+	}
+`;
+
 export const usefullLinksQuery = groq`
 	*[_type == "linksPage"] {
 		_createdAt, _id, _rev, _type, _updatedAt,

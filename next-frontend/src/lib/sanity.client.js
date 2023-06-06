@@ -5,6 +5,7 @@ import {
     allDirectorsQuery,
     allMembersQuery,
     allProjectsPreviewQuery,
+    allProjectsQuery,
     allSocialInfoQuery,
     usefullLinksQuery,
 } from './sanity.queries';
@@ -25,6 +26,10 @@ export async function getAllSocialInfo() {
 
 export async function getAllProjectsPreview() {
     return await sanityClient.fetch(allProjectsPreviewQuery);
+}
+
+export async function getAllProjects() {
+    return await sanityClient.fetch(allProjectsQuery);
 }
 
 export async function getLinksPageData() {

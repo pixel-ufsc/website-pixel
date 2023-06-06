@@ -1,7 +1,9 @@
 import styles from './project-card.module.css';
-import Link from 'next/link';
+
 import CardFrame from '../card-frame/card-frame.component';
+
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProjectCard({ title, tags, imageSrc, href, ...props }) {
     return (
