@@ -20,7 +20,6 @@ export default function Home({ directorsData, projectsPreviewData }) {
             <Services />
             <SectionDivider />
             <Directors directors={directorsData} />
-            <SectionDivider />
         </PageContainer>
     );
 }
