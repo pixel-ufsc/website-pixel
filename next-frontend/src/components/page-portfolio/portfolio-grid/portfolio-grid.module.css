@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: min-content;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 1rem;
+}
+
+@media (max-width: 1400px) {
+    .grid {
+        grid-template-columns: min-content;
+    }
+}

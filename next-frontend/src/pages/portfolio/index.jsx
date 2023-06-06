@@ -1,37 +1,23 @@
-import styles from './portifolio.module.css';
-
+// Components
+import GradientLongTitle from '@components/ui/title/gradient-long-title/gradient-long-title.component';
+import SectionDivider from '@components/ui/section-divider/section-divider.component';
 import PageContainer from '@components/layout/page-container/page-container.component';
-import ProjectCard from '@components/ui/card/project-card/project-card.component';
-
-import { getAllProjects, sanityClient } from '@lib/sanity.client';
-import { useNextSanityImage } from 'next-sanity-image';
+import PortfolioGrid from '@components/page-portfolio/portfolio-grid/portfolio-grid.component';
+// Lib
+import { getAllProjects } from '@lib/sanity.client';
 
 export default function Portfolio({ projectsData }) {
     return (
         <PageContainer>
-            <div className={styles.contentWrapper}>
-                <h1 className={styles.title}>
-                    {'Explore os '}
-                    <span className={styles.gradient}>projetos&nbsp;e&nbsp;produtos</span>
-                    {'\n desenvolvidos'}
-                </h1>
-                <section className={styles.projectsGrid}>
-                    {projectsData?.map((project, index) => {
-                        const imageProps = useNextSanityImage(sanityClient, project?.data?.preview_image);
-                        return (
-                            <ProjectCard
-                                key={index}
-                                title={project?.data?.name}
-                                tags={project?.data?.tags}
-                                imageSrc={imageProps?.src}
-                                // href={`/portifolio/${project?.data?.slug?.current}`} REMEMBER -> change href to this url
-                                href={project?.data?.url}
-                                description={project?.data?.description}
-                            />
-                        );
-                    })}
-                </section>
-            </div>
+            <SectionDivider.pageBorder />
+            <GradientLongTitle>
+                {'Explore os '}
+                <span>projetos&nbsp;e&nbsp;produtos</span>
+                {' desenvolvidos'}
+            </GradientLongTitle>
+            <SectionDivider />
+            <PortfolioGrid projectsData={projectsData} />
+            <SectionDivider.pageBorder />
         </PageContainer>
     );
 }

@@ -22,12 +22,12 @@
 
 .text_content_wrapper {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: calc(8rem / 15);
 }
 
 .text_content_wrapper h3 {
@@ -35,7 +35,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.25;
     color: var(--color-blue);
 
     text-decoration: underline;
@@ -46,18 +46,19 @@
     transition: text-decoration-color 0.15s ease;
 }
 
-.text_content_wrapper a:hover h3 {
-    text-decoration-color: rgba(var(--color-blue-rgb), 1);
-}
-
 .text_content_wrapper p {
     font-size: 1rem;
     font-weight: 400;
     color: #ababab;
     line-height: 1.5;
+
+    margin-bottom: 8px;
 }
 
 .tags_container {
+    display: flex;
+    gap: 8px;
+
     font-family: 'Krub';
     font-weight: 400;
     font-size: 1rem;
