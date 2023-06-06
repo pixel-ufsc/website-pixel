@@ -21,7 +21,7 @@ export default function ProjectCard({ title, tags, imageSrc, href, description, 
                 )}
             </div>
 
-            <div className={styles.title_wrapper}>
+            <div className={styles.text_content_wrapper}>
                 {/* REMEMBER -> REMOVE TARGET ATRIBUTE FOR LINK */}
                 <Link href={href} target="_blank">
                     <h3>{title}</h3>
