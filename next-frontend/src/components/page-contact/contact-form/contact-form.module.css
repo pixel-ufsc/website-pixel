@@ -121,6 +121,7 @@
 .send_container {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
@@ -141,5 +142,10 @@
     #submit_button {
         width: initial !important;
         max-width: 80%;
+    }
+
+    .send_container {
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
