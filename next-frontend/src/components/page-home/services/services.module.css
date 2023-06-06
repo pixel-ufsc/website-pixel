@@ -3,16 +3,17 @@
     height: fit-content;
 
     display: grid;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: min-content mockup;
     grid-template-rows: min-content;
     align-items: center;
     justify-items: center;
 
     column-gap: 8%;
     row-gap: 0;
-    grid-template-areas: 'description mockup';
+    grid-template-areas: 'mockup description';
 
     padding: 0 10%;
+    margin-bottom: 20px; /* To compensate for the 20px margin-bottom of the .title_container */
 }
 
 .title {
@@ -68,6 +69,7 @@
     max-height: 50vh;
 
     aspect-ratio: 2055/1271; /* Image's height/width */
+    transform: translateY(20px); /* Offsets to center the image (because of the shadow) */
 }
 
 .mockup > .computer_image {

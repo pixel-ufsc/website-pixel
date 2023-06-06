@@ -15,11 +15,12 @@ export default function Home({ directorsData, projectsPreviewData }) {
             <IntroContent />
             <AboutUs />
             <SectionDivider />
-            <PortfolioPreview projectsPreview={projectsPreviewData} />
-            <SectionDivider />
             <Services />
             <SectionDivider />
+            <PortfolioPreview projectsPreview={projectsPreviewData} />
+            <SectionDivider />
             <Directors directors={directorsData} />
+            <SectionDivider.pageBorder />
         </PageContainer>
     );
 }

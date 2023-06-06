@@ -14,9 +14,15 @@ import { HiUserGroup } from 'react-icons/hi';
 export default function Directors({ title, directors }) {
     return (
         <div className={styles.container}>
-            <SimpleTitle fontSize="small" textColor={'purple-gradient'}>
-                Nossos membros
-            </SimpleTitle>
+            <div className={styles.title_container}>
+                <SimpleTitle fontSize="small" textColor={'purple-gradient'}>
+                    Nossos membros
+                </SimpleTitle>
+                <p>
+                    Esses são alguns dos membros que fazem parte da nossa equipe. Conheça todos os membros em{' '}
+                    <Link href={'/sobre'}>sobre nós</Link>.
+                </p>
+            </div>
             <SliderCarousel containerClassName={styles.slider_container} wrapperClassName={styles.slider_items_wrapper}>
                 {directors?.map((director, index) => {
                     const imageProps = useNextSanityImage(sanityClient, director?.data?.image);

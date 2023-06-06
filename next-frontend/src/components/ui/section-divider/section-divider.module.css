@@ -3,19 +3,17 @@
 }
 
 .page_border {
-    margin-top: 3rem;
+    margin-top: 4rem;
+}
+
+.divider {
+    height: 4rem;
 }
 
 @media (min-width: 62.5rem) {
     /* 62.5rem = 1000px */
-    .divider {
-        height: 5rem;
-    }
 }
 
 @media (max-width: 62.5rem) {
     /* 62.5rem = 1000px */
-    .divider {
-        height: 5rem;
-    }
 }

@@ -6,7 +6,7 @@ export default function SpanTag({ textColor, backgroundColor, children, ...props
             className={styles.tag}
             style={{
                 color: textColor ? textColor : '#959595',
-                backgroundColor: backgroundColor ? backgroundColor : '#EEEEEE',
+                backgroundColor: backgroundColor ? backgroundColor : '#F5F5F5',
             }}
             {...props}
         >

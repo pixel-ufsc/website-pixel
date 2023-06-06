@@ -13,7 +13,8 @@ export default function Services() {
                     Nossos serviços
                 </SimpleTitle>
                 <p className={styles.primary}>
-                    Atuamos no desenvolvimento de sites com foco em usabilidade, performance e conversão.
+                    Atuamos no <strong>desenvolvimento de sites</strong> com foco em usabilidade, performance e
+                    conversão.
                 </p>
                 <p className={styles.secondary}>
                     Desenvolvemos sites personalizados e responsivos, combinando as mais recentes tecnologias para
@@ -25,7 +26,9 @@ export default function Services() {
 
             <div className={styles.mockup}>
                 <Image className={styles.computer_image} fill src={'/images/macbook-with-shadow.png'} />
-                <div className={styles.site_image_container}></div>
+                <div className={styles.site_image_container}>
+                    <Image fill className={styles.site_image} src={'/images/banner.png'} />
+                </div>
             </div>
         </section>
     );
