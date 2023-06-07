@@ -4,6 +4,8 @@ import Image from 'next/image';
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 // Assets
+import Macbook from '@public/images/macbook-with-shadow.png';
+import Site from '@public/images/banner.png';
 
 export default function Services() {
     return (
@@ -28,7 +30,7 @@ export default function Services() {
                 <Image
                     className={styles.computer_image}
                     fill
-                    src={'/images/macbook-with-shadow.png'}
+                    src={Macbook}
                     sizes="35vw"
                     priority
                     quality={80}
@@ -38,7 +40,7 @@ export default function Services() {
                     <Image
                         fill
                         className={styles.site_image}
-                        src={'/images/banner.png'}
+                        src={Site}
                         sizes="35vw"
                         priority
                         quality={80}
