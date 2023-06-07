@@ -32,6 +32,7 @@ export default function Services() {
                     sizes="35vw"
                     priority
                     quality={80}
+                    placeholder="blur"
                 />
                 <div className={styles.site_image_container}>
                     <Image
@@ -41,6 +42,7 @@ export default function Services() {
                         sizes="35vw"
                         priority
                         quality={80}
+                        placeholder="blur"
                     />
                 </div>
             </div>
