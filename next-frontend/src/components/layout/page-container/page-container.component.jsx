@@ -27,6 +27,8 @@ export default function PageContainer({
         <>
             <Head>
                 <title>{title ? title : fallback.title}</title>
+                <meta name="title" content={title ? title : fallback.title} />
+                <meta name="og:title" content={title ? title : fallback.title} />
                 <meta name="description" content={description ? description : fallback.description} />
                 <meta name="og:description" content={description ? description : fallback.description} />
                 <meta property="og:type" content="website" />

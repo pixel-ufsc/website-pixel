@@ -5,7 +5,7 @@ import ArticleContainer from '@components/layout/article-container/article-conta
 
 export default function PoliticaPrivacidade() {
     return (
-        <PageContainer description={'Política de Privacidade do nosso site.'}>
+        <PageContainer title={'Política de Privacidade'} description={'Política de Privacidade do nosso site.'}>
             <ArticleContainer className={styles.contentWrapper}>
                 <article className={styles.topic}>
                     <h2>1. Porque temos uma Política de Privacidade?</h2>

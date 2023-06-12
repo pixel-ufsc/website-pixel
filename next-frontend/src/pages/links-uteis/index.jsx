@@ -10,7 +10,7 @@ export default function LinksUteis({ linksData }) {
     const links = linksData[0]?.data?.links ? linksData[0]?.data?.links : [];
 
     return (
-        <PageContainer hasHeader={false} hasFooter={false} description={'Links úteis da Pixel.'}>
+        <PageContainer hasHeader={false} hasFooter={false} title={'Links úteis'} description={'Links úteis da Pixel.'}>
             <div className={styles.background}>
                 <div className={styles.container}>
                     <Link href="/">

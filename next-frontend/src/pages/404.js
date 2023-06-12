@@ -7,7 +7,11 @@ import SpanTag from '@components/ui/tag/span-tag/span-tag.component';
 
 export default function Custom404() {
     return (
-        <PageContainer hasWhatsappButton={false}>
+        <PageContainer
+            hasWhatsappButton={false}
+            title={'Página não encontrada'}
+            description={'Desculpe, não conseguimos encontrar a página que você estava procurando.'}
+        >
             <div className={styles.container}>
                 <div className={styles.text_container}>
                     <SpanTag textColor={'#c57857'} backgroundColor={'#ffede8'}>

@@ -6,7 +6,7 @@ import UnderMaintenance from '@components/ui/under-maintenance/under-maintenance
 
 export default function ProcessoSeletivo() {
     return (
-        <PageContainer description={'Venha fazer parte do nosso time!'}>
+        <PageContainer title={'Processo Seletivo'} description={'Venha fazer parte do nosso time!'}>
             <UnderMaintenance />
             {/* <section className={styles.processoSeletivo}>
                 <div>
