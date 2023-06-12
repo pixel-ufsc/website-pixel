@@ -8,7 +8,7 @@ import { getAllProjects } from '@lib/sanity.client';
 
 export default function Portfolio({ projectsData }) {
     return (
-        <PageContainer>
+        <PageContainer description={'Conheça os projetos e produtos desenvolvidos pela Pixel.'}>
             <SectionDivider.pageBorder />
             <GradientLongTitle>
                 {'Explore os '}

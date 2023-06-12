@@ -4,7 +4,7 @@ import UnderMaintenance from '@components/ui/under-maintenance/under-maintenance
 
 export default function Servicos() {
     return (
-        <PageContainer>
+        <PageContainer description={'Somos especializados em desenvolvimento sites e soluções digitais.'}>
             <UnderMaintenance />
         </PageContainer>
     );

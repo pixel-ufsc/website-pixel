@@ -28,6 +28,8 @@ export default function PageContainer({
             <Head>
                 <title>{title ? title : fallback.title}</title>
                 <meta name="description" content={description ? description : fallback.description} />
+                <meta name="og:description" content={description ? description : fallback.description} />
+                <meta property="og:type" content="website" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="theme-color" content="#82337e" />
                 <link rel="icon" href="/favicon.ico" />

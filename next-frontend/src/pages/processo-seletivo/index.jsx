@@ -2,10 +2,12 @@ import styles from './processo-seletivo.module.css';
 import Image from 'next/image';
 // Components
 import PageContainer from '@components/layout/page-container/page-container.component';
+import UnderMaintenance from '@components/ui/under-maintenance/under-maintenance.component';
 
 export default function ProcessoSeletivo() {
     return (
-        <PageContainer>
+        <PageContainer description={'Venha fazer parte do nosso time!'}>
+            <UnderMaintenance />
             {/* <section className={styles.processoSeletivo}>
                 <div>
                     <HighlightedTitle>Processo Seletivo</HighlightedTitle>

@@ -12,7 +12,7 @@ export default function Submission() {
     const submissionStatus = router.query?.success && router.query.success === 'true';
 
     return submissionStatus ? (
-        <PageContainer hasWhatsappButton={false}>
+        <PageContainer hasWhatsappButton={false} description={'Obrigado por entrar em contato conosco.'}>
             <div className={styles.container}>
                 <div className={styles.text_container}>
                     <SpanTag textColor={'#4a9c5b'} backgroundColor={'#e8f8e8'}>
