@@ -47,7 +47,7 @@ const project = {
       type: 'image',
       title: 'Imagem de pré-visualização',
       description:
-        'Essa é a imagem que será mostrada como capa do projeto. A proporção da imagem deve ser de 16:9 e, idealmente, deve-se utilizar um tamanho de arquivo pequeno (até 1MB).',
+        'Essa é a imagem que será mostrada como capa do projeto. A proporção da imagem deve ser de 16:9 e, idealmente, deve-se utilizar um tamanho de arquivo pequeno (até 1MB). Recomenda-se que se utilize a ferramenta https://www.site-shot.com/ para obter a imagem de pré-visualização do site. Para isso, basta inserir o link do site do projeto na ferramenta e, idealmente, manter a resolução da imagem como 1280x720 (para reduzir o tamanho do arquivo).',
       validation: (Rule) => Rule.required(),
       group: 'images',
     },
