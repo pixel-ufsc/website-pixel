@@ -27,6 +27,7 @@ export default function PageContainer({
         <>
             <Head>
                 <title>{title ? title : fallback.title}</title>
+                <meta name="google-site-verification" content="Zqy8qoKX-mG3kVbPduug0voOEGdbOJvuTR9iYwm3ddo" />
                 <meta name="title" content={title ? title : fallback.title} />
                 <meta name="og:title" content={title ? title : fallback.title} />
                 <meta name="description" content={description ? description : fallback.description} />
