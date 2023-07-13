@@ -33,7 +33,7 @@ export default function MediaHeader({ contact_email, facebook_url, instagram_url
                         <LinkedinIcon className={styles.icon} />
                     </a>
                     <a
-                        href={whatsapp_url ? whatsapp_url : 'https://wa.me/554891447023'}
+                        href={whatsapp_url ? whatsapp_url : 'https://wa.link/ucwug7'}
                         target="_blank"
                         className={styles.icon_wrapper}
                     >
