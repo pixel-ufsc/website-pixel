@@ -14,7 +14,7 @@ export default function ContactInformation() {
                 <WhatsappIcon fill="#000" className={styles.icon} />
 
                 <div className={styles.phone}>
-                    <p>(48) 99144-7023</p>
+                    <p>+55 48 9209-2256</p>
                 </div>
             </div>
 

@@ -106,8 +106,8 @@ export default function TermoDeUso() {
                             ejpixel@ejpixel.com.br
                         </a>{' '}
                         ou ao nosso WhatsApp:{' '}
-                        <a href="https://wa.me/554891447023" target="_blank">
-                            +55 (48) 99144-7023
+                        <a href="https://wa.me/message/PB4N2GQBAAI4N1" target="_blank">
+                            +55 48 9209-2256
                         </a>
                         . Desta feita, o usuário autoriza, pelos mais variados meios, incluindo redes sociais, mas não
                         se limitando a elas, a abertura de canais de comunicação por parte da Pixel, a fim de
