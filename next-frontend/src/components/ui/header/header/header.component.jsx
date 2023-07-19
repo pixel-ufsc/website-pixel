@@ -10,7 +10,7 @@ import HeaderButton from './header-button/header-button.component';
 import SelectionProcessButton from '@components/ui/buttons/selection-process-button/selection-process-button.component';
 import PixelIconColored from '@public/svgs/pixel/pixel-icon-colored';
 
-function Navigation({ mobile, isSelectionProcessActive = false }) {
+function Navigation({ mobile }) {
     const router = useRouter();
     const pathsArray = router.pathname.split('/').splice(1);
 
@@ -31,7 +31,9 @@ function Navigation({ mobile, isSelectionProcessActive = false }) {
             <HeaderButton href="/contato" selected={pathsArray[0] === 'contato'}>
                 Contato
             </HeaderButton>
-            {!!isSelectionProcessActive && <SelectionProcessButton />}
+            <HeaderButton.highlighted href="https://app.pipefy.com/public/form/G-YzZES3" target="_blank">
+                Processo seletivo
+            </HeaderButton.highlighted>
         </nav>
     );
 }
