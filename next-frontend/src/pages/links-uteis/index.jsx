@@ -20,6 +20,7 @@ export default function LinksUteis({ linksData }) {
                         <div className={styles.container_buttons}>
                             {links?.map((link) => (
                                 <LinkButton
+                                    highlighted={link?.highlight}
                                     key={link?._id}
                                     url={link?.url ? link.url : '/'}
                                     title={link?.title ? link.title : '-'}

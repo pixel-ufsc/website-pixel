@@ -9,7 +9,7 @@
 .link_button:hover {
     transform: scale(1.01);
 }
-.link_button_text {
+.link_button > span {
     font-family: 'KoHo';
     font-display: swap;
     font-size: 1.2rem;
@@ -17,4 +17,12 @@
     color: #82337e;
     text-decoration: none;
     src: url(https://fonts.gstatic.com/s/koho/v16/K2FzfZ5fmddNNisssJ_DJaql.woff2) format('woff2');
+}
+
+.highlighted {
+    background: linear-gradient(150deg, #23b3df 0%, #1b9bce 100%);
+}
+
+.highlighted > span {
+    color: white;
 }
