@@ -22,6 +22,5 @@ export default function SimpleTitle({ children, className, textColor, ...props }
 SimpleTitle.propTypes = {
     children: P.node.isRequired,
     className: P.string,
-    fontSize: P.oneOf(['small', 'medium', 'large']),
     textColor: P.oneOf(['white', 'purple', 'purple-gradient']),
 };
