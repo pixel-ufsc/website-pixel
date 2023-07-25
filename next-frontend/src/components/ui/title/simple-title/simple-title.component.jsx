@@ -14,7 +14,7 @@ export default function SimpleTitle({ children, className, textColor, ...props }
             id={textColor && id[textColor] ? id[textColor] : styles.purple}
             {...props}
         >
-            <span className={styles.text}>{children}</span>
+            {children}
         </h1>
     );
 }
