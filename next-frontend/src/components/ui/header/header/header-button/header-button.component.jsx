@@ -15,3 +15,11 @@ HeaderButton.propTypes = {
     href: P.string,
     selected: P.bool,
 };
+
+HeaderButton.highlighted = function HighlightedHeaderButton({ children, href, ...props }) {
+    return (
+        <Link href={href} className={styles.highlighted_button} {...props}>
+            {children}
+        </Link>
+    );
+};
