@@ -46,7 +46,7 @@ export default function ContactForm() {
                 Accept: 'application/json',
             },
             body: JSON.stringify({
-                access_key: '66b36fb4-ce07-4991-b4aa-98f82da8a90b',
+                access_key: '38b0b6e9-38ae-4d11-802d-6d2948dc099a',
                 subject: 'Nova submissão de formulário - Pixel',
                 from_name: 'Site da Pixel',
                 name,
