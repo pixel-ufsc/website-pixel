@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 // Components
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
-export default function ContactForm() {
+export default function ContactForm({ className }) {
     const router = useRouter();
     const [formError, setFormError] = useState('');
 
@@ -67,7 +67,11 @@ export default function ContactForm() {
     }
 
     return (
-        <form className={styles.form} name="Form - Contact Page" onSubmit={handleSubmit}>
+        <form
+            className={className ? `${styles.form} ${className}` : styles.form}
+            name="Form - Contact Page"
+            onSubmit={handleSubmit}
+        >
             <div className={styles.form_element}>
                 <label className={styles.label} htmlFor="name">
                     Nome completo
