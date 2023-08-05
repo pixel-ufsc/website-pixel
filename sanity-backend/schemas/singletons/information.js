@@ -8,6 +8,13 @@ const information = {
       name: 'social_media',
     },
   ],
+  fieldsets: [
+    {
+      name: 'whatsapp',
+      title: 'WhatsApp',
+      rows: 2,
+    },
+  ],
   fields: [
     {
       name: 'instagram_url',
@@ -42,12 +49,22 @@ const information = {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'phone_number',
+      type: 'string',
+      title: 'Telefone',
+      description: 'Número de telefone da Pixel.',
+      group: 'social_media',
+      fieldset: 'whatsapp',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'whatsapp_url',
       type: 'url',
-      title: 'WhatsApp',
+      title: 'Link direto',
       description:
-        'Link de enviar mensagem para o WhatsApp da Pixel. Esse link pode ser gerado através do da API do WhatsApp (o link tem o formato https://wa.me/55XXXXXXXXXXX).',
+        'Link para enviar mensagem para o WhatsApp da Pixel. Esse link pode ser gerado através do da API do WhatsApp (o link tem o formato https://wa.me/55XXXXXXXXXXX).',
       group: 'social_media',
+      fieldset: 'whatsapp',
       validation: (Rule) => Rule.required(),
     },
     {
