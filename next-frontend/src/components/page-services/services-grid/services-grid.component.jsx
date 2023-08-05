@@ -54,7 +54,7 @@ export default function ServicesGrid() {
                     description={
                         'Você escolhe quais informações devem ser editáveis! Desenvolveremos uma interface simples e personalizada para a edição do conteúdo do seu site onde qualquer um da sua equipe será capaz de fazer alterações no conteúdo do site.'
                     }
-                    image={'/images/services/content-editing.png'}
+                    image={'/images/services/content-editing-fade.png'}
                     imageAlt={'Content Editing'}
                 />
 
