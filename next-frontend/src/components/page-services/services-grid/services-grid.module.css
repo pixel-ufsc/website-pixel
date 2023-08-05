@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    width: 1200px;
+
+    display: grid;
+    grid-gap: 16px;
+    justify-content: center;
+
+    grid-auto-rows: 380px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+#optimized_seo {
+    grid-column: 1 / span 7;
+}
+
+#responsive_design {
+    grid-column: 8 / span 5;
+}
+
+#security {
+    grid-column: 1 / span 5;
+}
+
+#performance {
+    grid-column: 6 / span 7;
+}
+
+#content_editing {
+    grid-column: 1 / span 7;
+}
+
+#transparency {
+    grid-column: 8 / span 5;
+}

@@ -8,7 +8,8 @@ import {deskStructure} from './deskStructure'
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 
 // Define the singleton document types
-const singletonTypes = new Set(['information', 'linksPage'])
+// All document's names that are singleton (only one instance of it) should be added here
+const singletonTypes = new Set(['information', 'linksPage', 'selectionProcess'])
 
 export default defineConfig({
   name: 'default',

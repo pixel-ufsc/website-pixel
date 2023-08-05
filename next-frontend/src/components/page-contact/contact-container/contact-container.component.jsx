@@ -7,13 +7,14 @@ import SimpleTitle from '@components/ui/title/simple-title/simple-title.componen
 export default function ContactContainer() {
     return (
         <div className={styles.container}>
-            <SimpleTitle textColor="purple-gradient" fontSize="medium" className={styles.title}>
-                Entre em contato conosco
-            </SimpleTitle>
-            <div className={styles.wrapper}>
-                <ContactForm />
-                <ContactInformation />
+            <div className={styles.title_container}>
+                <SimpleTitle textColor="purple-gradient" fontSize="medium">
+                    Entre em contato conosco
+                </SimpleTitle>
+                <p>Entre em contato conosco para sabermos como podemos te ajudar!</p>
             </div>
+            <ContactForm />
+            <ContactInformation />
         </div>
     );
 }
