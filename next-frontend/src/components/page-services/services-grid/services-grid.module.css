@@ -14,7 +14,7 @@
     grid-gap: 16px;
     justify-content: center;
 
-    grid-auto-rows: clamp(200px, 1fr, 380px);
+    grid-auto-rows: 380px;
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
