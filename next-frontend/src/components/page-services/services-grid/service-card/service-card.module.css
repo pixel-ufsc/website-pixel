@@ -77,3 +77,29 @@
     object-fit: contain;
     object-position: center;
 }
+
+@media (max-width: 1100px) {
+    .card.horizontal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: calc(12rem / 16);
+    }
+
+    .card.horizontal .card_text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card.horizontal .card_image_wrapper {
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 30rem) {
+    .card.horizontal .card_image_wrapper {
+        min-height: 120px;
+    }
+}
