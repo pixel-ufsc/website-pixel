@@ -31,9 +31,9 @@ function Navigation({ mobile }) {
             <HeaderButton href="/contato" selected={pathsArray[0] === 'contato'}>
                 Contato
             </HeaderButton>
-            <HeaderButton.highlighted href="https://app.pipefy.com/public/form/G-YzZES3" target="_blank">
+            {/* <HeaderButton.highlighted href="https://app.pipefy.com/public/form/G-YzZES3" target="_blank">
                 Processo seletivo
-            </HeaderButton.highlighted>
+            </HeaderButton.highlighted> */}
         </nav>
     );
 }
