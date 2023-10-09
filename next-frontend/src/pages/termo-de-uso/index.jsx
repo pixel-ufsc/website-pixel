@@ -64,7 +64,7 @@ export default function TermoDeUso() {
                         <li>Informar o e-mail para contato;</li>
                         <li>Informar o número de telefone para contato;</li>
                         <li>Digitar na aba "mensagem" o motivo de seu contato com a Pixel;</li>
-                        <li>Clicar no batão "Enviar E-mail".</li>
+                        <li>Clicar no botão "Enviar E-mail".</li>
                     </ol>
                     <p>
                         Também poderá ser possível entrar em contato diretamente através do WhatsApp da Pixel por meio

@@ -8,7 +8,7 @@ export default function PoliticaPrivacidade() {
         <PageContainer title={'Política de Privacidade'} description={'Política de Privacidade do nosso site.'}>
             <ArticleContainer className={styles.contentWrapper}>
                 <article className={styles.topic}>
-                    <h2>1. Porque temos uma Política de Privacidade?</h2>
+                    <h2>1. Por que temos uma Política de Privacidade?</h2>
                     <p>
                         A Política de Privacidade é destinada a explanar a vida útil dos dados adquiridos através do
                         nosso site, no qual você terá conhecimento acerca do tratamento dos dados coletados e sua
