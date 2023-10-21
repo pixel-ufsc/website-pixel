@@ -10,6 +10,7 @@ export default function Shop() {
         >
             <h1 className={styles.heading}>Loja Pixel</h1>
             <p>Luis - primeira sessao</p>
+            <p>Gustavo - segunda sessao</p>
             <p>Jose - ultima sessao</p>
         </PageContainer>
     );
