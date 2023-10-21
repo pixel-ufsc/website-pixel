@@ -9,7 +9,8 @@ export default function Shop() {
             hasWhatsappButton={false}
         >
             <h1 className={styles.heading}>Loja Pixel</h1>
+
+            <p>Jose - ultima sessao</p>
         </PageContainer>
     );
 }
-
