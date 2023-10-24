@@ -39,7 +39,7 @@ export const allSocialInfoQuery = groq`
 `;
 
 export const allProjectsPreviewQuery = groq`
-	*[_type == "project"] | order(_createdAt desc) {
+	*[_type == "project"] | order(date_finished desc) {
 		_createdAt, _id, _rev, _type, _updatedAt,
 		"data": {
 			name,
@@ -52,12 +52,13 @@ export const allProjectsPreviewQuery = groq`
 `;
 
 export const allProjectsQuery = groq`
-	*[_type == "project"] | order(_createdAt desc) {
+	*[_type == "project"] | order(date_finished desc) {
 		_createdAt, _id, _rev, _type, _updatedAt,
 		"data": {
 			name,
 			slug,
 			url,
+			date_finished,
 			description,
 			preview_image,
 			tags,

@@ -21,6 +21,13 @@ const project = {
       group: 'general_information',
     },
     {
+      name: 'date_finished',
+      type: 'date',
+      title: 'Data de finalização',
+      validation: (Rule) => Rule.required(),
+      group: 'general_information',
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',

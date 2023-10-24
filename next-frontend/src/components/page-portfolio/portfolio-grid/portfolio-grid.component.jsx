@@ -17,6 +17,7 @@ export default function PortfolioGrid({ className, projectsData, ...props }) {
                             title={project?.data?.name}
                             tags={project?.data?.tags}
                             imageSrc={imageProps?.src}
+                            dateFinished={project?.data?.date_finished}
                             // TODO - href={`/portifolio/${project?.data?.slug?.current}`} -> change href to this url
                             href={project?.data?.url}
                             description={project?.data?.description}
