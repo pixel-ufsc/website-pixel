@@ -17,9 +17,29 @@ export default function Shop() {
             description={'Loja de produtos da Empresa Júnior Pixel Soluções Digitais'}
             hasWhatsappButton={false}
         >
-            <h1 className={styles.heading}>Loja Pixel</h1>
-            <p>Luis - primeira sessao</p>
-            <p>Gustavo - segunda sessao</p>
+            {/*Inicio Primeira Sessao - Luis*/}
+            <section className={styles.intro_loja_container}>
+                <h1 className={styles.title}>
+                    {'A'}
+                    <span className={styles.gradient}> loja&nbsp;oficial</span>
+                    {' dos\nprodutos Pixel'}
+                </h1>
+                <div className={styles.icon_wrapper}>
+                    <div id={styles.pixel_icon}></div>
+                </div>
+            </section>
+            <section className={styles.about_loja_container}>
+                <h1 className={styles.about_loja_title}>A Loja</h1>
+                <p className={styles.about_loja_description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo mattis, sollicitudin lorem
+                    vehicula, eleifend mi. Praesent egestas sit amet orci ut interdum. Nunc varius nulla elit, nec
+                    suscipit erat pretium a. Vivamus ut velit sapien. Quisque vel pretium leo, nec sodales quam. Integer
+                    imperdiet tempor tortor nec ornare.
+                </p>
+            </section>
+            <section className={styles.section_divider}></section>
+            {/*Fim Primeira Sessao - Luis*/}
+            {/*Inicio Segunda Sessao - Gustavo*/}
             <div className={styles.product_section}>
                 <h1 className={styles.product_section}>Produtos</h1>
                 <div className={styles.product_section_infos}>
@@ -56,6 +76,7 @@ export default function Shop() {
                 </div>
             </div>
             <SectionDivider />
+            {/*Fim Segunda Sessao - Gustavo*/}
             {/* <p>Jose - ultima sessao</p> */}
 
             <div className={styles.buy_section}>
