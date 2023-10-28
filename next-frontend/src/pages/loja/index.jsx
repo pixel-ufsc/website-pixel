@@ -77,8 +77,8 @@ export default function Shop() {
             </div>
             <SectionDivider />
             {/*Fim Segunda Sessao - Gustavo*/}
-            {/* <p>Jose - ultima sessao</p> */}
 
+            {/* <p>Jose - ultima sessao</p> */}
             <div className={styles.buy_section}>
                 <div className={styles.content}>
                     <div className={styles.text_content}>
@@ -86,17 +86,28 @@ export default function Shop() {
                             Comprar
                         </SimpleTitle>
                         <p>Está interessado em algum produto?</p>
+                        <div className={styles.image_content_mobile}>
+                            <Image
+                                className={styles.svg_image}
+                                src={imageSVG}
+                                alt="auxImage"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
                         <br />
                         <p>
                             Para adquirir os produtos Pixel, entre em nosso <strong>grupo no WhatsApp</strong>: todas as
                             informações acerca de disponibilidade de produtos, pagamento e envio estarão na{' '}
                             <strong>descrição</strong>.
                         </p>
+                        <a href=''>
                         <div className={styles.container_buttons}>
-                            <a href="">Entrar no Grupo</a>
+                            Entrar no Grupo
                         </div>
+                        </a>
                     </div>
-                    <div className={styles.image_content}>
+                    <div className={styles.image_content_desktop}>
                         <Image className={styles.svg_image} src={imageSVG} alt="auxImage" width={400} height={400} />
                     </div>
                 </div>

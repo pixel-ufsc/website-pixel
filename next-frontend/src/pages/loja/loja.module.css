@@ -211,8 +211,6 @@
     letter-spacing: 0.8px;
 }
 
-/* Inicio Seção Compra - Jose */
-
 .buy_button {
     width: 40.063rem;
     flex-shrink: 0;
@@ -250,11 +248,10 @@
     }
 }
 
-/* SESSAO JOSE */
+/* Inicio Seção Grupo - Jose */
 .buy_section {
     width: 100%;
-    height: 600px;
-    padding: 12.5px 350px 12.5px 350px; /*top right bottom left*/
+    padding: 12.5px 400px; /*top right bottom left*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,11 +301,98 @@
     background: linear-gradient(118.93deg, #82337e 29.47%, #023047 87.66%);
 }
 
-.image_content {
+.image_content_desktop {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px;
+    margin: 88px;
+}
+
+.image_content_mobile {
+    display: none;
+}
+
+/* small screens */
+@media (max-width: 560px) {
+    .buy_section {
+        width: 100%;
+        padding: 16px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_content p {
+        font-size: 1em;
+        line-height: 1.75em;
+        letter-spacing: 0.025em;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .image_content_mobile {
+        display: block;
+    }
+    .image_content_desktop {
+        display: none;
+    }
+    .container_buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .svg_image {
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}
+/* medium screens */
+@media (max-width: 1000px) {
+    .buy_section {
+        width: 100%;
+        padding: 3em;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_content p {
+        font-size: 1em;
+        line-height: 1.75em;
+        letter-spacing: 0.025em;
+    }
+    .title {
+        font-size: 2em !important;
+    }
+    .image_content_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image_content_desktop {
+        display: none;
+    }
+
+    .container_buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .svg_image {
+        padding-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: auto;
+    }
 }
