@@ -29,7 +29,7 @@ export default function Shop() {
                 </div>
             </section>
             <section className={styles.about_loja_container}>
-                <h1 className={styles.about_loja_title}>A Loja</h1>
+                <SimpleTitle className={styles.about_loja_title}>A Loja</SimpleTitle>
                 <p className={styles.about_loja_description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo mattis, sollicitudin lorem
                     vehicula, eleifend mi. Praesent egestas sit amet orci ut interdum. Nunc varius nulla elit, nec
@@ -37,7 +37,7 @@ export default function Shop() {
                     imperdiet tempor tortor nec ornare.
                 </p>
             </section>
-            <section className={styles.section_divider}></section>
+            <SectionDivider />
             {/*Fim Primeira Sessao - Luis*/}
             {/*Inicio Segunda Sessao - Gustavo*/}
             <div className={styles.product_section}>
