@@ -61,6 +61,16 @@
     animation: gradient 3s ease infinite;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
 @media (max-width: 87.5rem) {
     /* 87.5rem = 1400px */
     .intro_loja_container .title {
@@ -107,20 +117,8 @@
     gap: var(--title-bottom-gap);
 }
 
-.about_loja_title {
-    font-family: KoHo;
-    font-size: calc(32rem / 16);
-    font-weight: 600;
-    line-height: 4.75rem;
-    letter-spacing: 0.025em;
-    background: linear-gradient(133.57deg, #82337e 3.83%, #023047 88.3%);
-    -webkit-background-clip: text;  
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .about_loja_description {
-    font-family: KoHo;
+    font-family: 'Krub', sans-serif;
     font-size: calc(16rem / 16);
     font-weight: 400;
     color: var(--color-blue);

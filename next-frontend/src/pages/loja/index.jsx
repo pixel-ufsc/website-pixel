@@ -29,7 +29,7 @@ export default function Shop() {
                 </div>
             </section>
             <section className={styles.about_loja_container}>
-                <SimpleTitle className={styles.about_loja_title}>A Loja</SimpleTitle>
+                <SimpleTitle textColor={'purple-gradient'}>A Loja</SimpleTitle>
                 <p className={styles.about_loja_description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo mattis, sollicitudin lorem
                     vehicula, eleifend mi. Praesent egestas sit amet orci ut interdum. Nunc varius nulla elit, nec
@@ -37,8 +37,8 @@ export default function Shop() {
                     imperdiet tempor tortor nec ornare.
                 </p>
             </section>
-            <SectionDivider />
             {/*Fim Primeira Sessao - Luis*/}
+            <SectionDivider />
             {/*Inicio Segunda Sessao - Gustavo*/}
             <div className={styles.product_section}>
                 <h1 className={styles.product_section}>Produtos</h1>
@@ -75,9 +75,8 @@ export default function Shop() {
                     </div>
                 </div>
             </div>
-            <SectionDivider />
             {/*Fim Segunda Sessao - Gustavo*/}
-
+            <SectionDivider />
             {/* <p>Jose - ultima sessao</p> */}
             <div className={styles.buy_section}>
                 <div className={styles.content}>
@@ -101,10 +100,8 @@ export default function Shop() {
                             informações acerca de disponibilidade de produtos, pagamento e envio estarão na{' '}
                             <strong>descrição</strong>.
                         </p>
-                        <a href=''>
-                        <div className={styles.container_buttons}>
-                            Entrar no Grupo
-                        </div>
+                        <a href="">
+                            <div className={styles.container_buttons}>Entrar no Grupo</div>
                         </a>
                     </div>
                     <div className={styles.image_content_desktop}>
