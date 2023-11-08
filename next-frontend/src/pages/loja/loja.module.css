@@ -170,11 +170,10 @@
     flex-direction: column;
     gap: 2.438rem;
     margin-top: 20px;
+    width: auto;
 }
 
-.product_section_about_title {
-    width: 30.063rem;
-    height: 3.833rem;
+.product_section_about_title{
     flex-shrink: 0;
     color: #82337e;
     font-family: KoHo;
@@ -187,10 +186,10 @@
     margin-left: 5.313rem;
 }
 
-.caractry_text_propriety {
+.caractry_text_propriety{
     color: var(--Cinza-Texto, #4b4b4b);
     font-family: KoHo;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 115%;
@@ -228,22 +227,57 @@
     letter-spacing: 1.175px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 83.518rem) {
+    .product_section_about_title{
+        margin: 0;
+    }
     .product_section_infos {
         display: block;
         align-items: center;
+        text-align: center;
     }
-
     .product_section_about {
         align-items: center;
         margin-left: 0;
     }
-
     .prodct_image {
-        margin-left: 3.125rem;
+        width: 25rem;
+        height: 25rem;
+    }
+    .buy_button{
+        margin: 0;
+    }
+}
+@media(max-width: 39.063rem){
+    .product_section_about{
+        gap:1.4em ;
+    }
+    .product_section_about_title{
+        font-size: 1.9em;
+    }
+    .prodct_image {
+        width: 60%;
+        height: 60%;
+    }
+    .caractry_text_propriety{
+        font-size: 1.4em;
+    }
+    .caractry_text{
+        font-size:1.4em;
+    }
+    .buy_button{
+        width: 28em;
+    }
+    .buy_button_text{
+        font-size: 2.1rem;
     }
 }
 
+@media(max-width: 39.063rem){
+    .buy_button{
+        width: 14em;
+    }
+}
 /* Inicio Seção Grupo - Jose */
 .buy_section {
     width: 100%;
@@ -350,7 +384,7 @@
     }
 }
 /* medium screens */
-@media (max-width: 1000px) {
+@media (max-width: 83.518rem) {
     .buy_section {
         width: 100%;
         padding: 3em;

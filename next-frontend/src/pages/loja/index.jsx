@@ -47,8 +47,8 @@ export default function Shop() {
                         className={styles.prodct_image}
                         src={productImage}
                         alt="xicarapixel"
-                        width={530} // Set the width of the image
-                        height={530} // Set the height of the image
+                        width={500} // Set the width of the image
+                        height={500} // Set the height of the image
                     />
                     <div className={styles.product_section_about}>
                         <h2 className={styles.product_section_about_title}>Caneca de café logo pixel</h2>
@@ -68,9 +68,9 @@ export default function Shop() {
                             Microondas: <span className={styles.caractry_text}>Sim</span>
                         </p>
                         <div>
-                            <button className={styles.buy_button}>
+                            <div className={styles.buy_button}>
                                 <span className={styles.buy_button_text}>R$29,80</span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
