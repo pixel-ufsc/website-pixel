@@ -101,7 +101,13 @@ export default function Shop() {
                             <strong>descrição</strong>.
                         </p>
                         <a href="">
-                            <div className={styles.container_buttons}>Entrar no Grupo</div>
+                            {/* {<div className={styles.container_buttons}>Entrar no Grupo</div>} */}
+                            <HoverableButton
+                                className={styles.container_buttons}
+                                label="Entrar no Grupo"
+                                type="submit"
+                                arrowed={true}
+                            />
                         </a>
                     </div>
                     <div className={styles.image_content_desktop}>
