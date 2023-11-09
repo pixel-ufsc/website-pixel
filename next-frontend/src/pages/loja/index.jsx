@@ -41,7 +41,7 @@ export default function Shop() {
             <SectionDivider />
             {/*Inicio Segunda Sessao - Gustavo*/}
             <div className={styles.product_section}>
-                <h1 className={styles.product_section}>Produtos</h1>
+                <SimpleTitle textColor={'purple-gradient'}>Produtos</SimpleTitle>
                 <div className={styles.product_section_infos}>
                     <Image
                         className={styles.prodct_image}
@@ -118,3 +118,4 @@ export default function Shop() {
         </PageContainer>
     );
 }
+

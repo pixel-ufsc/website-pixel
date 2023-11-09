@@ -8,6 +8,7 @@
     --color-white: #fff;
     --color-whatsapp: #25d366;
     --color-black-gray: #444;
+    --color-text-gray: #4b4b4b;
     --color-light-blue: #1691aa;
     --color-text: #242328;
 
@@ -64,3 +65,4 @@ button {
 ::selection {
     background: rgba(162, 218, 230, 0.4);
 }
+
