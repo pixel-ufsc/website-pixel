@@ -71,14 +71,12 @@
 }
 
 @media (max-width: 87.5rem) {
-    /* 87.5rem = 1400px */
     .intro_loja_container .title {
         font-size: calc(56rem / 16);
     }
 }
 
 @media (max-width: 62.5rem) {
-    /* 62.5rem = 1000px */
     .intro_loja_container {
         padding: 15vh 5%;
     }
@@ -89,13 +87,11 @@
 }
 
 @media (max-width: 35rem) {
-    /* 35rem = 560px */
     .intro_loja_container {
         padding: 15vh 5%;
     }
 
     .intro_loja_container .icon_wrapper {
-        /* display: none; */
         height: 220px;
         width: 220px;
     }
@@ -149,16 +145,12 @@
 
 .prodct_image {
     border-radius: 0.438rem;
-    /* margin: 20px; */
 }
 
 .product_section_about {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 2rem;
-    /* margin-top: 20px; */
-    /* width: auto; */
 }
 
 .product_section_about_title {
@@ -168,9 +160,7 @@
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.2;
-    /* 62.475px */
     letter-spacing: 0.077rem;
-    /* margin-left: 5.313rem; */
     text-align: center;
 }
 
@@ -189,13 +179,11 @@
 }
 
 .buy_button {
-    /* width: 40.063rem; */
     flex-shrink: 0;
     border-radius: 8px;
     background: linear-gradient(119deg, #82337e 29.47%, #023047 87.66%);
     text-align: center;
     padding: calc(8rem / 16) 0;
-    /* margin-right: 1.875rem; */
 }
 
 .buy_button_text {
@@ -209,61 +197,11 @@
     letter-spacing: 1.175px;
 }
 
-@media (max-width: 83.518rem) {
-    .product_section_about_title {
-        margin: 0;
-    }
-    .product_section_infos {
-        display: block;
-        align-items: center;
-        text-align: center;
-    }
-    .product_section_about {
-        align-items: center;
-        margin-left: 0;
-    }
-    .prodct_image {
-        width: 25rem;
-        height: 25rem;
-    }
-    .buy_button {
-        margin: 0;
-    }
-}
-@media (max-width: 39.063rem) {
-    .product_section_about {
-        gap: 1.4em;
-    }
-    .product_section_about_title {
-        font-size: 1.9em;
-    }
-    .prodct_image {
-        width: 60%;
-        height: 60%;
-    }
-    .caractry_text_propriety {
-        font-size: 1.4em;
-    }
-    .caractry_text {
-        font-size: 1.4em;
-    }
-    .buy_button {
-        width: 28em;
-    }
-    .buy_button_text {
-        font-size: 2.1rem;
-    }
-}
-
-@media (max-width: 39.063rem) {
-    .buy_button {
-        width: 14em;
-    }
-}
-/* Inicio Seção Grupo - Jose */
 .buy_section {
     width: 100%;
-    padding: 12.5px 400px; /*top right bottom left*/
+    max-width: calc(1200rem / 16);
+    padding: 1rem;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -272,11 +210,9 @@
 
 .buy_section p {
     font-family: Krub;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0.025em;
-    text-align: justified;
+    line-height: 2.55;
 }
 .content {
     display: flex;
@@ -285,31 +221,10 @@
 }
 
 .title {
-    order: 2;
     font-family: Krub;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 5rem;
-    letter-spacing: 0.025em;
-    text-align: left;
-}
-.text_content p:nth-of-type(2) {
-    /*seleciona somente o segundo paragrafo*/
-    padding: 0 0px 2.5rem 0px; /*top right bottom left*/
-}
-
-.container_buttons {
-    color: white;
-    width: 200px !important;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5em;
-    text-align: center;
-    border-radius: 10px !important;
-    font-family: Krub;
-    background: linear-gradient(118.93deg, #82337e 29.47%, #023047 87.66%);
+    letter-spacing: 4px;
 }
 
 .image_content_desktop {
@@ -325,86 +240,97 @@
     display: none;
 }
 
-/* small screens */
-@media (max-width: 560px) {
-    .buy_section {
-        width: 100%;
-        padding: 16px;
+.join_group_button {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: calc(40rem / 16);
     }
-    .content {
-        display: flex;
+
+    .buy_section p {
+        font-size: calc(20rem / 16);
+    }
+
+    .product_section_infos {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        width: 90%;
     }
-    .text_content p {
-        font-size: 1em;
-        line-height: 1.75em;
-        letter-spacing: 0.025em;
-    }
-    .title {
-        font-size: 1.5em;
-    }
-    .image_content_mobile {
-        display: block;
-    }
-    .image_content_desktop {
-        display: none;
-    }
-    .container_buttons {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .svg_image {
-        padding-top: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+
+    .prodct_image {
+        width: 25rem;
         height: auto;
     }
 }
-/* medium screens */
-@media (max-width: 83.518rem) {
-    .buy_section {
-        width: 100%;
-        padding: 3em;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text_content p {
-        font-size: 1em;
-        line-height: 1.75em;
-        letter-spacing: 0.025em;
-    }
-    .title {
-        font-size: 2em !important;
-    }
+
+@media (max-width: 980px) {
     .image_content_mobile {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .image_content_desktop {
         display: none;
     }
 
-    .container_buttons {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .svg_image {
-        padding-top: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-top: 2rem;
         width: 60%;
         height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_content p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .image_content_desktop {
+        display: none;
+    }
+
+    .join_group_button {
+        font-size: 1rem;
+        padding: calc(8rem / 16) 1rem;
+    }
+
+    .prodct_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .product_section_about_title {
+        font-size: 1.5rem;
+    }
+
+    .caractry_text_propriety {
+        font-size: 1em;
+    }
+
+    .caractry_text {
+        font-size: 1em;
+    }
+
+    .buy_button_text {
+        font-size: 1.5rem;
     }
 }
 

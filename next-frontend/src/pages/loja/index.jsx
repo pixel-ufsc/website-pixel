@@ -1,12 +1,9 @@
 import Image from 'next/image';
 import styles from './loja.module.css';
 import PageContainer from '@components/layout/page-container/page-container.component';
-import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 import productImage from './product.png';
 import imageSVG from './image.svg';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
-import GradientLongTitle from '@components/ui/title/gradient-long-title/gradient-long-title.component';
-import LinkButton from '@components/ui/buttons/link-button/link-button.component';
 import SectionDivider from '@components/ui/section-divider/section-divider.component';
 import HoverableButton from '@components/ui/buttons/hoverable-button/hoverable-button.component';
 
@@ -17,7 +14,6 @@ export default function Shop() {
             description={'Loja de produtos da Empresa Júnior Pixel Soluções Digitais'}
             hasWhatsappButton={false}
         >
-            {/*Inicio Primeira Sessao - Luis*/}
             <section className={styles.intro_loja_container}>
                 <h1 className={styles.title}>
                     {'A'}
@@ -37,18 +33,16 @@ export default function Shop() {
                     imperdiet tempor tortor nec ornare.
                 </p>
             </section>
-            {/*Fim Primeira Sessao - Luis*/}
             <SectionDivider />
-            {/*Inicio Segunda Sessao - Gustavo*/}
             <div className={styles.product_section}>
                 <SimpleTitle textColor={'purple-gradient'}>Produtos</SimpleTitle>
                 <div className={styles.product_section_infos}>
                     <Image
                         className={styles.prodct_image}
                         src={productImage}
-                        alt="xicarapixel"
-                        width={500} // Set the width of the image
-                        height={500} // Set the height of the image
+                        alt="Xícara à venda da Pixel."
+                        width={500}
+                        height={500}
                     />
                     <div className={styles.product_section_about}>
                         <h2 className={styles.product_section_about_title}>Caneca de café logo pixel</h2>
@@ -59,7 +53,7 @@ export default function Shop() {
                             Medidas: <span className={styles.caractry_text}>X cm x Y cm</span>
                         </p>
                         <p className={styles.caractry_text_propriety}>
-                            Material: <span className={styles.caractry_text}>Cerãmica</span>
+                            Material: <span className={styles.caractry_text}>Cerâmica</span>
                         </p>
                         <p className={styles.caractry_text_propriety}>
                             Cor: <span className={styles.caractry_text}>Branco</span>
@@ -75,9 +69,7 @@ export default function Shop() {
                     </div>
                 </div>
             </div>
-            {/*Fim Segunda Sessao - Gustavo*/}
             <SectionDivider />
-            {/* <p>Jose - ultima sessao</p> */}
             <div className={styles.buy_section}>
                 <div className={styles.content}>
                     <div className={styles.text_content}>
@@ -100,15 +92,7 @@ export default function Shop() {
                             informações acerca de disponibilidade de produtos, pagamento e envio estarão na{' '}
                             <strong>descrição</strong>.
                         </p>
-                        <a href="">
-                            {/* {<div className={styles.container_buttons}>Entrar no Grupo</div>} */}
-                            <HoverableButton
-                                className={styles.container_buttons}
-                                label="Entrar no Grupo"
-                                type="submit"
-                                arrowed={true}
-                            />
-                        </a>
+                        <HoverableButton className={styles.join_group_button} label="Entrar no Grupo" href={'/'} />
                     </div>
                     <div className={styles.image_content_desktop}>
                         <Image className={styles.svg_image} src={imageSVG} alt="auxImage" width={400} height={400} />
