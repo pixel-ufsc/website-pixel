@@ -46,21 +46,17 @@ export default function Shop() {
                     />
                     <div className={styles.product_section_about}>
                         <h2 className={styles.product_section_about_title}>Caneca de café logo pixel</h2>
-                        <p className={styles.caractry_text_propriety}>
-                            Capacidade: <span className={styles.caractry_text}>325 ml</span>
-                        </p>
-                        <p className={styles.caractry_text_propriety}>
-                            Medidas: <span className={styles.caractry_text}>X cm x Y cm</span>
-                        </p>
-                        <p className={styles.caractry_text_propriety}>
-                            Material: <span className={styles.caractry_text}>Cerâmica</span>
-                        </p>
-                        <p className={styles.caractry_text_propriety}>
-                            Cor: <span className={styles.caractry_text}>Branco</span>
-                        </p>
-                        <p className={styles.caractry_text_propriety}>
-                            Microondas: <span className={styles.caractry_text}>Sim</span>
-                        </p>
+                        <div className={styles.description_container}>
+                            <p className={styles.caractry_text_propriety}>
+                                Capacidade: <span className={styles.caractry_text}>325 ml</span>
+                            </p>
+                            <p className={styles.caractry_text_propriety}>
+                                Material: <span className={styles.caractry_text}>Cerâmica</span>
+                            </p>
+                            <p className={styles.caractry_text_propriety}>
+                                Cor: <span className={styles.caractry_text}>Branco</span>
+                            </p>
+                        </div>
                         <div>
                             <div className={styles.buy_button}>
                                 <span className={styles.buy_button_text}>R$29,80</span>

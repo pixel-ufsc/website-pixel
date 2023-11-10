@@ -150,7 +150,13 @@
 .product_section_about {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 4rem;
+}
+
+.description_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
 }
 
 .product_section_about_title {
