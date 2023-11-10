@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import styles from './loja.module.css';
 import PageContainer from '@components/layout/page-container/page-container.component';
-import productImage from './product.png';
 import imageSVG from './image.svg';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 import SectionDivider from '@components/ui/section-divider/section-divider.component';
@@ -39,10 +38,10 @@ export default function Shop() {
                 <div className={styles.product_section_infos}>
                     <Image
                         className={styles.prodct_image}
-                        src={productImage}
+                        src={'/images/caneca-pixel.png'}
                         alt="Xícara à venda da Pixel."
-                        width={500}
-                        height={500}
+                        width={400}
+                        height={400}
                     />
                     <div className={styles.product_section_about}>
                         <h2 className={styles.product_section_about_title}>Caneca de café logo pixel</h2>
