@@ -265,6 +265,10 @@
         width: 90%;
     }
 
+    .product_section_about, .description_container {
+        gap: 1.75rem;
+    }
+
     .prodct_image {
         width: 25rem;
         height: auto;
