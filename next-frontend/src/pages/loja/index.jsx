@@ -26,10 +26,11 @@ export default function Shop() {
             <section className={styles.about_loja_container}>
                 <SimpleTitle textColor={'purple-gradient'}>A Loja</SimpleTitle>
                 <p className={styles.about_loja_description}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget leo mattis, sollicitudin lorem
-                    vehicula, eleifend mi. Praesent egestas sit amet orci ut interdum. Nunc varius nulla elit, nec
-                    suscipit erat pretium a. Vivamus ut velit sapien. Quisque vel pretium leo, nec sodales quam. Integer
-                    imperdiet tempor tortor nec ornare.
+                    Fala, queridos! A Loja Pixel está oficialmente lançada, apresentando nosso primeiro produto: uma
+                    caneca de café. E o melhor? Tudo a preço de custo! Quem sabe lançaremos mais itens no futuro? Para
+                    obter mais informações sobre o produto e como realizar a compra, leia os próximos tópicos. Em caso
+                    de dúvidas, estamos disponíveis em nossas redes sociais ou pelo nosso número de WhatsApp. Contamos
+                    com vocês!
                 </p>
             </section>
             <SectionDivider />
