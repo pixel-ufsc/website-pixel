@@ -73,7 +73,7 @@ export default function Shop() {
             <div className={styles.buy_section}>
                 <div className={styles.content}>
                     <div className={styles.text_content}>
-                        <SimpleTitle className={styles.title} textColor={'purple-gradient'}>
+                        <SimpleTitle className={styles.buy_section_title} textColor={'purple-gradient'}>
                             Comprar
                         </SimpleTitle>
                         <p>Está interessado em algum produto?</p>
@@ -92,7 +92,11 @@ export default function Shop() {
                             informações acerca de disponibilidade de produtos, pagamento e envio estarão na{' '}
                             <strong>descrição</strong>.
                         </p>
-                        <HoverableButton className={styles.join_group_button} label="Entrar no Grupo" href={'/'} />
+                        <HoverableButton
+                            className={styles.join_group_button}
+                            label="Entrar no Grupo"
+                            href={'https://chat.whatsapp.com/G09QG0oI4lg5R3x1gdUezC'}
+                        />
                     </div>
                     <div className={styles.image_content_desktop}>
                         <Image className={styles.svg_image} src={imageSVG} alt="auxImage" width={400} height={400} />

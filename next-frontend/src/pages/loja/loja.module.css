@@ -114,7 +114,7 @@
 
 .about_loja_description {
     font-family: 'Krub', sans-serif;
-    font-size: calc(16rem / 16);
+    font-size: 1.25rem;
     font-weight: 400;
     color: var(--color-blue);
     line-height: 1.75;
@@ -210,21 +210,21 @@
 
 .buy_section p {
     font-family: Krub;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2.55;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.5;
+    margin-top: 0.25rem;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.title {
+.buy_section_title {
     font-family: Krub;
     font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 4px;
 }
 
 .image_content_desktop {
@@ -247,12 +247,8 @@
 }
 
 @media (max-width: 1200px) {
-    .title {
+    .buy_section_title {
         font-size: calc(40rem / 16);
-    }
-
-    .buy_section p {
-        font-size: calc(20rem / 16);
     }
 
     .product_section_infos {
@@ -293,14 +289,14 @@
         align-items: center;
     }
 
-    .text_content p {
+    .buy_section p,
+    .about_loja_description {
         font-size: 1rem;
         line-height: 1.75;
     }
 
-    .title {
+    .buy_section_title {
         font-size: 2rem;
-        letter-spacing: 2px;
     }
 
     .image_content_desktop {
