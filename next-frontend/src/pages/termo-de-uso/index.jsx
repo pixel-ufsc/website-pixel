@@ -27,8 +27,8 @@ export default function TermoDeUso() {
                     </p>
                     <p>
                         A fim de garantir ainda mais segurança aos nossos usuários, recomendamos também a leitura de
-                        nossa Política de Privacidade (inserir link), a qual regula e detalha como se dá o tratamento da
-                        Pixel sobre os dados a nós fornecidos.
+                        nossa <a href="/politica-de-privacidade">Política de Privacidade</a>, a qual regula e detalha
+                        como se dá o tratamento da Pixel sobre os dados a nós fornecidos.
                     </p>
                 </article>
                 <article className={styles.topic}>
@@ -61,7 +61,7 @@ export default function TermoDeUso() {
                     </p>
                     <p>
                         É importante destacar que todos os dados fornecidos pelo usuário serão tratados pela Pixel de
-                        acordo com as previsões de nossa <a href="/politica-de-privacidade">Política de Privacidade</a>.
+                        acordo com as previsões de nossa Política de Privacidade.
                     </p>
                     <p>
                         Assim que nossa equipe receber a sua mensagem (seja por mensagem, seja pelo site), entraremos em
