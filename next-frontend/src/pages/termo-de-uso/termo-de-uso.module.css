@@ -23,3 +23,15 @@
     line-height: 1.5;
     color: var(--color-black-gray);
 }
+
+.contentWrapper h3 {
+    color: var(--color-black-gray);
+    opacity: 0.9;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.contentWrapper ol {
+    color: var(--color-black-gray);
+}
