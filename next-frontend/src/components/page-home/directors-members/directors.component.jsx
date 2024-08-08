@@ -12,6 +12,13 @@ import SliderCarousel from '@components/ui/slider-carousel/slider-carousel.compo
 import { HiUserGroup } from 'react-icons/hi';
 
 export default function Directors({ title, directors }) {
+    // Ordena os diretores, colocando o presidente em primeiro lugar
+    const sortedDirectors = directors?.sort((a, b) => {
+        if (a?.data?.role === 'Presidente') return -1;
+        if (b?.data?.role === 'Presidente') return 1;
+        return 0;
+    });
+
     return (
         <div className={styles.container}>
             <div className={styles.title_container}>
@@ -24,7 +31,7 @@ export default function Directors({ title, directors }) {
                 </p>
             </div>
             <SliderCarousel containerClassName={styles.slider_container} wrapperClassName={styles.slider_items_wrapper}>
-                {directors?.map((director, index) => {
+                {sortedDirectors?.map((director, index) => {
                     const imageProps = useNextSanityImage(sanityClient, director?.data?.image);
                     return (
                         <MemberCard
