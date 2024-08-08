@@ -10,6 +10,13 @@ import MemberCard from '@components/ui/card/member-card/member-card.component';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 
 export default function MembersGrid({ members }: { members: Member[] }) {
+    // Ordena os membros, colocando o presidente em primeiro lugar
+    const sortedMembers = members?.sort((a, b) => {
+        if (a?.data?.role === 'Presidente') return -1;
+        if (b?.data?.role === 'Presidente') return 1;
+        return 0;
+    });
+
     return (
         <div className={styles.container}>
             <SimpleTitle textColor={'purple-gradient'} className={styles.title}>
@@ -17,7 +24,7 @@ export default function MembersGrid({ members }: { members: Member[] }) {
             </SimpleTitle>
 
             <div className={styles.grid_wrapper}>
-                {members?.map((member) => {
+                {sortedMembers?.map((member) => {
                     const imageProps = useNextSanityImage(sanityClient, member.data.image);
                     return (
                         <MemberCard
