@@ -53,7 +53,6 @@ export default function ContactForm({ className }) {
                 email,
                 phone,
                 'text-message': textMessage,
-                ccemail: 'projetos@ejpixel.com.br',
             }),
         });
 
