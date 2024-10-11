@@ -39,24 +39,21 @@ export default function ContactForm({ className }) {
             return;
         }
 
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch('/.netlify/functions/sendEmail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Accept: 'application/json',
             },
             body: JSON.stringify({
-                access_key: '38b0b6e9-38ae-4d11-802d-6d2948dc099a',
-                subject: 'Nova submissão de formulário - Pixel',
-                from_name: 'Site da Pixel',
                 name,
                 email,
                 phone,
-                'text-message': textMessage,
+                textMessage,
             }),
         });
 
         const result = await response.json();
+        console.log(result);
         if (result.success) {
             router.replace('/contato/submission?success=true');
         } else {
