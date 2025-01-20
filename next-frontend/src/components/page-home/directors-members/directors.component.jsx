@@ -58,3 +58,4 @@ export default function Directors({ title, directors }) {
         </div>
     );
 }
+

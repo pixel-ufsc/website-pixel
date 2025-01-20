@@ -10,8 +10,12 @@ import MemberCard from '@components/ui/card/member-card/member-card.component';
 import SimpleTitle from '@components/ui/title/simple-title/simple-title.component';
 
 export default function MembersGrid({ members }: { members: Member[] }) {
-    // Ordena os membros, colocando o presidente em primeiro lugar
-    const sortedMembers = members?.sort((a, b) => {
+    // Separar membros atuais e ex-membros
+    const currentMembers = members?.filter((member) => member?.data?.isCurrentMember);
+    const exMembers = members?.filter((member) => !member?.data?.isCurrentMember);
+
+    // Ordenar os membros atuais, colocando o presidente em primeiro lugar
+    const sortedCurrentMembers = currentMembers?.sort((a, b) => {
         if (a?.data?.role === 'Presidente') return -1;
         if (b?.data?.role === 'Presidente') return 1;
         return 0;
@@ -19,12 +23,12 @@ export default function MembersGrid({ members }: { members: Member[] }) {
 
     return (
         <div className={styles.container}>
+            {/* Seção de Membros Atuais */}
             <SimpleTitle textColor={'purple-gradient'} className={styles.title}>
                 Nossos membros
             </SimpleTitle>
-
             <div className={styles.grid_wrapper}>
-                {sortedMembers?.map((member) => {
+                {sortedCurrentMembers?.map((member) => {
                     const imageProps = useNextSanityImage(sanityClient, member.data.image);
                     return (
                         <MemberCard
@@ -37,6 +41,30 @@ export default function MembersGrid({ members }: { members: Member[] }) {
                     );
                 })}
             </div>
+
+            {/* Seção de Ex-Membros */}
+            {exMembers.length >= 0 && (
+                <>
+                    <SimpleTitle textColor={'purple-gradient'} className={styles.title}>
+                        Ex-Membros
+                    </SimpleTitle>
+                    <div className={styles.grid_wrapper}>
+                        {exMembers?.map((member) => {
+                            const imageProps = useNextSanityImage(sanityClient, member.data.image);
+                            return (
+                                <MemberCard
+                                    key={member?._id}
+                                    name={member?.data?.name}
+                                    role={member?.data?.role}
+                                    imageSrc={imageProps?.src}
+                                    loader={imageProps?.loader}
+                                />
+                            );
+                        })}
+                    </div>
+                </>
+            )}
         </div>
     );
 }
+

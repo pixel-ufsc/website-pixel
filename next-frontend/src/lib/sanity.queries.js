@@ -8,6 +8,7 @@ export const allMembersQuery = groq`
 			role,
 			image,
 			is_director,
+			isCurrentMember,
 		}
 	}
 `;
@@ -20,6 +21,7 @@ export const allDirectorsQuery = groq`
 			role,
 			image,
 			is_director,
+			isCurrentMember,
 		}
 	}
 `;
@@ -79,3 +81,4 @@ export const usefullLinksQuery = groq`
 		}
 	}
 `;
+
