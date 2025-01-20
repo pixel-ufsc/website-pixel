@@ -28,13 +28,20 @@ const member = {
       fieldset: 'role_information',
     },
     {
+      name: 'isCurrentMember',
+      type: 'boolean',
+      title: 'Membro Atual',
+      initialValue: true,
+      description: 'Marque se o membro ainda faz parte do time.',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'is_director',
       type: 'boolean',
       initialValue: false,
-      title: 'Diretor(a)',
+      title: 'Diretor(a) Atual',
       description:
         'Marque se o membro possui cargo de diretor(a) (isso fará com que ele apareça na página inicial).',
-      validation: (Rule) => Rule.required(),
       fieldset: 'role_information',
     },
     {
@@ -50,13 +57,14 @@ const member = {
     select: {
       name: 'name',
       role: 'role',
+      isCurrentMember: 'isCurrentMember',
       media: 'image',
     },
     prepare(selection) {
-      const {name, role, media} = selection
+      const {name, role, isCurrentMember, media} = selection
       return {
         title: name,
-        subtitle: role,
+        subtitle: `${role} (${isCurrentMember ? 'Atual' : 'Ex-Membro'})`,
         media,
       }
     },

@@ -1,5 +1,5 @@
 import {RiInformationLine} from 'react-icons/ri'
-import {BsFilePersonFill, BsFillClipboardCheckFill} from 'react-icons/bs'
+import {BsFilePersonFill, BsFillClipboardCheckFill, BsPeopleFill} from 'react-icons/bs'
 import {BiLink} from 'react-icons/bi'
 import {HiUserGroup} from 'react-icons/hi'
 
