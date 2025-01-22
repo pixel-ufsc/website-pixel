@@ -55,7 +55,7 @@ export default function MembersGrid({ members }: { members: Member[] }) {
                                 <MemberCard
                                     key={member?._id}
                                     name={member?.data?.name}
-                                    role={member?.data?.role}
+                                    // role={member?.data?.role}
                                     imageSrc={imageProps?.src}
                                     loader={imageProps?.loader}
                                 />
