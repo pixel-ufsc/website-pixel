@@ -82,3 +82,11 @@ export const usefullLinksQuery = groq`
 	}
 `;
 
+export const whatsappUrl = groq`
+	*[_type == "information"] {
+		_createdAt, _id, _rev, _type, _updatedAt,
+		"data": {
+			whatsapp_url
+		}
+	}
+`;

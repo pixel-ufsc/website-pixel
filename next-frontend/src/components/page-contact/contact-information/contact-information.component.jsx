@@ -3,7 +3,7 @@ import styles from './contact-information.module.css';
 import { MdOutlineWhatsapp } from 'react-icons/md';
 import { VscMail } from 'react-icons/vsc';
 
-export default function ContactInformation({ className }) {
+export default function ContactInformation({ className, whatsappUrl}) {
     const iconSize = 48;
 
     return (
@@ -14,7 +14,7 @@ export default function ContactInformation({ className }) {
                     <h2>Nosso WhatsApp</h2>
                     <p>
                         Envie uma mensagem pelo nosso WhatsApp através do número{' '}
-                        <a href="https://wa.me/message/PB4N2GQBAAI4N1" target="_blank">
+                        <a href={whatsappUrl} target="_blank">
                             +55 (48) 9209-2256
                         </a>
                         .

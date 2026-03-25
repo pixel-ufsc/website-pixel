@@ -8,6 +8,7 @@ import {
     allProjectsQuery,
     allSocialInfoQuery,
     usefullLinksQuery,
+    whatsappUrl,
 } from './sanity.queries';
 
 export const sanityClient = createClient(clientConfig);
@@ -34,4 +35,8 @@ export async function getAllProjects() {
 
 export async function getLinksPageData() {
     return await sanityClient.fetch(usefullLinksQuery);
+}
+
+export async function getWhatsappUrl() {
+    return await sanityClient.fetch(whatsappUrl);
 }
