@@ -28,6 +28,7 @@ export default function PageContainer({
             <Head>
                 <title>{title ? title : fallback.title}</title>
                 <meta name="google-site-verification" content="Zqy8qoKX-mG3kVbPduug0voOEGdbOJvuTR9iYwm3ddo" />
+                <meta name="impact-site-verification" value="adb39d0a-ff9d-4ebc-9f69-49084939f74a" />
                 <meta name="title" content={title ? title : fallback.title} />
                 <meta name="og:title" content={title ? title : fallback.title} />
                 <meta name="description" content={description ? description : fallback.description} />
@@ -47,3 +48,4 @@ export default function PageContainer({
         </>
     );
 }
+
